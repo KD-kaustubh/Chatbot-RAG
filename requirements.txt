@@ -6,6 +6,9 @@ langchain-text-splitters
 # LLM Integration (Groq)
 langchain-groq
 
+# LLM Integration (Gemini, fallback provider)
+langchain-google-genai
+
 # Embedding Model Integration (Hugging Face)
 langchain-huggingface
 sentence-transformers

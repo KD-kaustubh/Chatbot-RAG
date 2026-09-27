@@ -5,7 +5,7 @@ import gradio as gr
 from dotenv import load_dotenv
 import chromadb
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_groq import ChatGroq
+from llm_providers import load_models, invoke_with_fallback
 from typing import List, Any, Dict
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
@@ -38,7 +38,7 @@ prompt_configs = load_yaml_config(PROMPT_CONFIG_PATH)
 embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 handbook_client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
 handbook_collection = handbook_client.get_collection(name="handbook")
-llm = ChatGroq(model="llama-3.1-8b-instant")
+models = load_models()
 
 
 # Pydantic model for the router
@@ -54,18 +54,20 @@ print("AI Assistant: Initialization complete. Ready for interaction.")
 # --- 2. CORE RAG LOGIC  ---
 
 def get_router_decision(user_question: str) -> RouterOutput:
-    structured_llm = llm.with_structured_output(RouterOutput)
     subject_keywords = list(subjects_db.keys())
     prompt_template_text = prompt_configs['router_prompt']
     prompt = PromptTemplate(
         template=prompt_template_text,
         input_variables=["user_question", "subject_keywords"]
         )
-    router_chain = prompt | structured_llm
-    return router_chain.invoke({
-        "user_question": user_question,
-        "subject_keywords": subject_keywords
-        })
+    return invoke_with_fallback(
+        models,
+        lambda model: prompt | model.with_structured_output(RouterOutput, method="json_schema"),
+        {
+            "user_question": user_question,
+            "subject_keywords": subject_keywords
+            }
+        )
 
 
 def retrieve_context(user_question: str, decision: RouterOutput) -> str:
@@ -111,13 +113,16 @@ def chat_with_agent(user_question, history):
         template=final_prompt_template, 
         input_variables=["context", "question"]
         )
-    final_chain = prompt | llm
-    ai_response = final_chain.invoke({
-        "context": context, 
-        "question": user_question
-        })
-    
-    return ai_response.content
+    ai_response = invoke_with_fallback(
+        models,
+        lambda model: prompt | model,
+        {
+            "context": context,
+            "question": user_question
+            }
+        )
+
+    return ai_response.text
 
 
 
