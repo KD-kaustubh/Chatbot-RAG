@@ -1,16 +1,3 @@
----
-title: IITM BS Degree Assistant
-emoji: 🎓
-colorFrom: red
-colorTo: yellow
-sdk: gradio
-sdk_version: 6.28.0
-python_version: "3.12"
-app_file: app.py
-pinned: false
-short_description: Unofficial RAG chatbot for the IITM BS Data Science program
----
-
 # RAG Chatbot for the IITM BS in Data Science Program
 
 A retrieval-augmented generation (RAG) chatbot that answers student questions about the IIT Madras BS in Data Science program — course content, degree structure, exam rules and policies — using the official course documents and student handbook as its only source of truth.
@@ -43,18 +30,22 @@ Embeddings are generated locally with `all-MiniLM-L6-v2`, run through ONNX by Ch
 
 ```
 .
+├── .streamlit/
+│   └── config.toml         # Maroon theme for the Streamlit app
 ├── assets/
-│   └── bot.svg             # Chat avatar for the web UI
+│   └── bot.svg             # Chat avatar for the Gradio app
 ├── config/
 │   └── rag_prompts.yaml    # Router and answer prompt templates
 ├── Data/                   # Source .txt documents (handbook + one file per subject)
 ├── handbook_db/            # ChromaDB vector store (created by ingest.py, git-ignored)
 ├── subjects_db.json        # Full text of every subject document
 ├── ingest.py               # Builds the knowledge bases from Data/
-├── chatbot.py              # Core RAG logic shared by both apps
-├── llm_providers.py        # Gemini/Groq setup with automatic fallback
-├── rag.py                  # Command-line chatbot
+├── chatbot.py              # Core RAG logic shared by all the apps
+├── llm_providers.py        # AI Pipe/Gemini/Groq setup with automatic fallback
+├── ui_content.py           # Text and styling shared by both web UIs
+├── streamlit_app.py        # Streamlit web interface (used for deployment)
 ├── app.py                  # Gradio web interface
+├── rag.py                  # Command-line chatbot
 └── requirements.txt
 ```
 
@@ -110,11 +101,19 @@ This updates `handbook_db/` and regenerates `subjects_db.json`.
 
 ## Usage
 
-**Web interface**
+Both web interfaces have the same IITM-style maroon design, a "Program at a glance" sidebar and suggested questions, and work on phones.
+
+**Streamlit web interface**
+```bash
+streamlit run streamlit_app.py
+```
+Opens http://localhost:8501 in your browser.
+
+**Gradio web interface**
 ```bash
 python app.py
 ```
-Open http://127.0.0.1:7860 in your browser. The page has an IITM-style maroon theme, a "Program at a glance" sidebar, suggested questions, and works in light/dark mode and on phones.
+Open http://127.0.0.1:7860 in your browser.
 
 **Command line**
 ```bash
@@ -122,24 +121,29 @@ python rag.py
 ```
 Type `exit` to quit.
 
-## Deploying to Hugging Face Spaces
+## Deploying to Streamlit Community Cloud
 
-The block at the top of this README is the Space configuration, so the repo can be pushed to a Space as is.
+The app deploys straight from this GitHub repo, for free.
 
-1. Create a new Space at https://huggingface.co/new-space. Pick **Gradio** as the SDK and the free **CPU basic** hardware.
-2. In the Space, open **Settings → Variables and secrets** and add these as **Secrets**:
-   `AI_PIPE`, `GEMINI_API_KEY`, `GROQ_API_KEY` (and any optional settings from the list above).
-3. Push the code to the Space:
-   ```bash
-   git remote add space https://huggingface.co/spaces/<your-hf-username>/<space-name>
-   git push space main
+1. Go to https://share.streamlit.io and sign in with GitHub.
+2. Click **Create app** → **Deploy a public app from GitHub** and fill in:
+   - **Repository:** `KD-kaustubh/Chatbot-RAG`
+   - **Branch:** `main`
+   - **Main file path:** `streamlit_app.py`
+   - **App URL:** pick a name, e.g. `iitm-bs-assistant`
+3. Open **Advanced settings**, choose **Python 3.12**, and paste your keys into **Secrets** (TOML format):
+   ```toml
+   AI_PIPE = "your_aipipe_token"
+   GEMINI_API_KEY = "your_gemini_key"
+   GROQ_API_KEY = "your_groq_key"
    ```
-   When asked for a password, use a Hugging Face access token with **write** permission (https://huggingface.co/settings/tokens).
-4. The first build takes a few minutes. On first start the app downloads the embedding model and builds `handbook_db/`, then it's live at `https://huggingface.co/spaces/<your-hf-username>/<space-name>`.
+4. Click **Deploy**. The first start takes a few minutes: it installs the packages, downloads the embedding model and builds `handbook_db/`.
 
-To update the live app later, commit as usual and run `git push space main` again.
+Every push to `main` redeploys the app automatically. Keys can be changed later from the app's **Settings → Secrets**.
 
-Note: anyone with the link uses your API keys. The AI Pipe budget is small, so once it runs out answers come from Gemini and Groq.
+Notes:
+- Anyone with the link uses your API keys. The AI Pipe budget is small, so once it runs out answers come from Gemini and Groq.
+- Free apps go to sleep after a while without visitors. The next visitor sees a "wake up" button, and the app is back in about a minute.
 
 ## Example questions
 
