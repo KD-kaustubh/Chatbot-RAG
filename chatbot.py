@@ -21,6 +21,10 @@ HANDBOOK_DB_PATH = "./handbook_db"
 SUBJECTS_DB_PATH = "subjects_db.json"
 PROMPT_CONFIG_PATH = "config/rag_prompts.yaml"
 
+# More subjects than this means a broad question, which the handbook answers better.
+# It also keeps the prompt under Groq's free-tier limit of 8k tokens per minute.
+MAX_SUBJECTS = 3
+
 SERVICE_BUSY_MESSAGE = (
     "Sorry, the AI service is busy right now and I couldn't get an answer. "
     "Please try again in a minute."
@@ -105,20 +109,18 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
     Retrieves the appropriate context based on the router's decision.
     """
     query_type = decision.query_type
-    subjects = list(set(decision.subjects))
+    # Keep only subjects that really exist, without duplicates
+    subjects = [s for s in dict.fromkeys(decision.subjects) if s in subjects_db]
+
+    if query_type == "subject_content" and not 1 <= len(subjects) <= MAX_SUBJECTS:
+        print(f"Router picked {len(subjects)} valid subject(s), using handbook search instead.")
+        query_type = "general_handbook_query"
 
     print(f"Router decided query type is {query_type}")
 
     if query_type == "subject_content":
         print(f"Retrieving content for subject(s): {subjects}")
-        context = ""
-        for subject_key in subjects:
-            subject_content = subjects_db.get(subject_key)
-            if subject_content:
-                context += subject_content+"\n\n"
-
-        if not context:
-            return "Could not find the the specified subject document."
+        context = "\n\n".join(subjects_db[subject_key] for subject_key in subjects)
 
     else:
         print("Performing vector search on the handbook...")
