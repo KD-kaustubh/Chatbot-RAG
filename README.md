@@ -2,6 +2,10 @@
 
 A retrieval-augmented generation (RAG) chatbot that answers student questions about the IIT Madras BS in Data Science program — course content, degree structure, exam rules and policies — using the official course documents and student handbook as its only source of truth.
 
+**Live demo:** [https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/](https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/)
+
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/)
+
 ## How it works
 
 1. **Routing** – An LLM reads the question and decides whether it is about a specific subject (e.g. "What will I learn in Computational Thinking?") or a general handbook question (e.g. "What are the rules for the end term exam?").
@@ -123,7 +127,7 @@ Type `exit` to quit.
 
 ## Deploying to Streamlit Community Cloud
 
-The app deploys straight from this GitHub repo, for free.
+The live version runs at https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/ and deploys straight from this GitHub repo, for free.
 
 1. Go to https://share.streamlit.io and sign in with GitHub.
 2. Click **Create app** → **Deploy a public app from GitHub** and fill in:
