@@ -33,6 +33,7 @@ Embeddings are generated locally with `sentence-transformers/all-MiniLM-L6-v2`, 
 ├── handbook_db/            # ChromaDB vector store (created by ingest.py, git-ignored)
 ├── subjects_db.json        # Full text of every subject document
 ├── ingest.py               # Builds the knowledge bases from Data/
+├── chatbot.py              # Core RAG logic shared by both apps
 ├── llm_providers.py        # Gemini/Groq setup with automatic fallback
 ├── rag.py                  # Command-line chatbot
 ├── app.py                  # Gradio web interface
