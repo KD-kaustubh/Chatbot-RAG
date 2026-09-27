@@ -14,14 +14,15 @@ The last few messages of the chat are sent along with each question, so follow-u
 
 ### LLM providers and fallback
 
-The app uses two LLM providers:
+The app uses three LLM providers:
 
 | Provider | Default model | Used for |
 |----------|---------------|----------|
-| Google Gemini | `gemini-flash-latest` | Writing answers (more accurate, stays closer to the source documents) |
-| Groq | `openai/gpt-oss-20b` | Routing questions (very fast), and fallback for answers |
+| [AI Pipe](https://aipipe.org) (OpenAI) | `gpt-4.1-mini` | Writing answers (first choice) |
+| Google Gemini | `gemini-flash-latest` | Answers when AI Pipe is unavailable |
+| Groq | `openai/gpt-oss-20b` | Routing questions (very fast), and last fallback for answers |
 
-Routing is a simple classification, so it runs on Groq first to save Gemini's free-tier quota for the answers. Each step falls back to the other provider: if the primary provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
+Answer order is AI Pipe → Gemini → Groq. Routing is a simple classification, so it runs on free Groq first to save the AI Pipe budget and Gemini quota for the answers. Each step falls back to the next provider: if one provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
 
 Embeddings are generated locally with `sentence-transformers/all-MiniLM-L6-v2`, so no API is needed for retrieval.
 
@@ -65,21 +66,26 @@ pip install -r requirements.txt
 
 Create a `.env` file in the project root:
 ```
+AI_PIPE="your_aipipe_token"
 GEMINI_API_KEY="your_gemini_key"
 GROQ_API_KEY="your_groq_key"
 ```
+- AI Pipe token: https://aipipe.org (log in with your IITM account)
 - Gemini key: https://aistudio.google.com/apikey
 - Groq key: https://console.groq.com/keys
 
-You can run with just one of the two keys — the missing provider is skipped.
+Any provider without a key is skipped, so the app runs with just one of them.
 
 Optional settings in `.env`:
 ```
-LLM_ORDER="gemini,groq"              # provider order for answers, first one is primary
-ROUTER_ORDER="groq,gemini"           # provider order for routing
+LLM_ORDER="aipipe,gemini,groq"       # provider order for answers, first one is primary
+ROUTER_ORDER="groq,gemini,aipipe"    # provider order for routing
+AIPIPE_MODEL="gpt-4.1-mini"
 GEMINI_MODEL="gemini-flash-latest"
 GROQ_MODEL="openai/gpt-oss-20b"
 ```
+
+AI Pipe has a small weekly budget ($0.10 by default). One question costs about $0.002 with `gpt-4.1-mini` (~45 questions/week) and about $0.013 with `gpt-4o` (~7 questions/week). When the budget runs out, answers fall back to Gemini and Groq automatically.
 
 **4. Build the knowledge base (run once)**
 ```bash
@@ -114,7 +120,7 @@ Out-of-scope questions ("What is the capital of France?") and prompt-injection a
 ## Tech stack
 
 - **Framework:** LangChain
-- **LLMs:** Google Gemini (answers), Groq (routing + fallback)
+- **LLMs:** OpenAI via AI Pipe (answers), Google Gemini (fallback), Groq (routing + fallback)
 - **Vector store:** ChromaDB
 - **Embeddings:** Hugging Face `sentence-transformers/all-MiniLM-L6-v2`
 - **UI:** Gradio

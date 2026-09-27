@@ -9,6 +9,9 @@ langchain-groq
 # LLM Integration (Gemini, fallback provider)
 langchain-google-genai
 
+# LLM Integration (OpenAI models through AI Pipe)
+langchain-openai
+
 # Embedding Model Integration (Hugging Face)
 langchain-huggingface
 sentence-transformers
