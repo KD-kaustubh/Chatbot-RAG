@@ -14,13 +14,15 @@ from llm_providers import (
 from typing import List, Any, Dict, Literal, Optional
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
+from chromadb.errors import NotFoundError
+from ingest import ingest_handbook, HANDBOOK_DB_PATH, EMBEDDING_MODEL_NAME
 
 
 
 load_dotenv()
 
 # DEFINE PATHS TO OUR DATABASE AND CONFIG
-HANDBOOK_DB_PATH = "./handbook_db"
+HANDBOOK_PATH = "Data/handbook.txt"
 SUBJECTS_DB_PATH = "subjects_db.json"
 PROMPT_CONFIG_PATH = "config/rag_prompts.yaml"
 
@@ -61,11 +63,17 @@ subjects_db = load_json_db(SUBJECTS_DB_PATH)
 prompt_configs = load_yaml_config(PROMPT_CONFIG_PATH)
 
 embedding_model = HuggingFaceEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name=EMBEDDING_MODEL_NAME
 )
 
 handbook_client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
-handbook_collection = handbook_client.get_collection(name="handbook")
+try:
+    handbook_collection = handbook_client.get_collection(name="handbook")
+except NotFoundError:
+    # handbook_db/ is not in git, so a fresh clone or deployment builds it on first start
+    print("Handbook database not found, building it now (first start only)...")
+    ingest_handbook(HANDBOOK_PATH, handbook_client, embedding_model)
+    handbook_collection = handbook_client.get_collection(name="handbook")
 
 router_models = load_models("ROUTER_ORDER", DEFAULT_ROUTER_ORDER)
 answer_models = load_models("LLM_ORDER", DEFAULT_ANSWER_ORDER)

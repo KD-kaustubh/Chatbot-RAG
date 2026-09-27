@@ -6,15 +6,15 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 
 
-#  ----- SETTING UP CLIENT AND EMBEDDING MODELS FOR THE HANDBOOK ----
-client = chromadb.PersistentClient(path="./handbook_db")
-embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+HANDBOOK_DB_PATH = "./handbook_db"
+EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
 
 #  ----- INGESTION FUNCTION ------
-def ingest_handbook(handbook_path: str, collection_name: str = "handbook"):
+def ingest_handbook(handbook_path: str, client, embedding_model, collection_name: str = "handbook"):
     """
     Loads, chunks, embed and stores the handbook in a chromadb vector store.
+    Also called by chatbot.py on first start when the database doesn't exist yet.
     """
     
     #Load document
@@ -40,7 +40,8 @@ def ingest_handbook(handbook_path: str, collection_name: str = "handbook"):
     ids = [f"handbook_{i}" for i in range(len(chunks))]
     embedded_chunks = embedding_model.embed_documents(chunks)
 
-    collection.add(
+    # upsert so running ingestion again replaces chunks instead of duplicating them
+    collection.upsert(
         embeddings=embedded_chunks,
         documents=chunks,
         ids=ids
@@ -86,7 +87,10 @@ def main():
     """
     data_folder = "Data"
 
-    ingest_handbook(os.path.join(data_folder, "handbook.txt"))
+    client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
+    embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+
+    ingest_handbook(os.path.join(data_folder, "handbook.txt"), client, embedding_model)
     ingest_subjects(data_folder)
 
 
