@@ -14,8 +14,9 @@ langchain-groq==1.1.3
 # Vector Database (also runs the all-MiniLM-L6-v2 embedding model through ONNX)
 chromadb==1.5.9
 
-# Web User Interface
+# Web User Interface (Gradio for app.py, Streamlit for streamlit_app.py)
 gradio==6.28.0
+streamlit==1.64.0
 
 # Data Validation & Structured Output
 pydantic==2.12.5
