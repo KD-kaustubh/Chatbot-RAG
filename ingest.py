@@ -3,15 +3,22 @@ import json
 import chromadb
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-from langchain_huggingface import HuggingFaceEmbeddings
+from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 
 
 HANDBOOK_DB_PATH = "./handbook_db"
-EMBEDDING_MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+
+
+def load_embedding_function() -> DefaultEmbeddingFunction:
+    """
+    all-MiniLM-L6-v2 run through ONNX (bundled with chromadb). Gives the same vectors as the
+    sentence-transformers version, without needing PyTorch, so installs stay small.
+    """
+    return DefaultEmbeddingFunction()
 
 
 #  ----- INGESTION FUNCTION ------
-def ingest_handbook(handbook_path: str, client, embedding_model, collection_name: str = "handbook"):
+def ingest_handbook(handbook_path: str, client, embedding_function, collection_name: str = "handbook"):
     """
     Loads, chunks, embed and stores the handbook in a chromadb vector store.
     Also called by chatbot.py on first start when the database doesn't exist yet.
@@ -38,7 +45,7 @@ def ingest_handbook(handbook_path: str, client, embedding_model, collection_name
     #Embed the chunks and store them in Chromadb
     collection = client.get_or_create_collection(name=collection_name)
     ids = [f"handbook_{i}" for i in range(len(chunks))]
-    embedded_chunks = embedding_model.embed_documents(chunks)
+    embedded_chunks = embedding_function(chunks)
 
     # upsert so running ingestion again replaces chunks instead of duplicating them
     collection.upsert(
@@ -88,9 +95,9 @@ def main():
     data_folder = "Data"
 
     client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
-    embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL_NAME)
+    embedding_function = load_embedding_function()
 
-    ingest_handbook(os.path.join(data_folder, "handbook.txt"), client, embedding_model)
+    ingest_handbook(os.path.join(data_folder, "handbook.txt"), client, embedding_function)
     ingest_subjects(data_folder)
 
 

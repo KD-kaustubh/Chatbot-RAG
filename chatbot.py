@@ -1,12 +1,11 @@
 """
-Core RAG logic shared by the command-line app (rag.py) and the web app (app.py).
+Core RAG logic shared by the command-line app (rag.py) and the web apps (app.py, streamlit_app.py).
 """
 import os
 import json
 import yaml
 from dotenv import load_dotenv
 import chromadb
-from langchain_huggingface import HuggingFaceEmbeddings
 from llm_providers import (
     load_models, invoke_with_fallback, with_schema,
     DEFAULT_ROUTER_ORDER, DEFAULT_ANSWER_ORDER,
@@ -15,7 +14,7 @@ from typing import List, Any, Dict, Literal, Optional
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 from chromadb.errors import NotFoundError
-from ingest import ingest_handbook, HANDBOOK_DB_PATH, EMBEDDING_MODEL_NAME
+from ingest import ingest_handbook, load_embedding_function, HANDBOOK_DB_PATH
 
 
 
@@ -62,9 +61,7 @@ subjects_db = load_json_db(SUBJECTS_DB_PATH)
 
 prompt_configs = load_yaml_config(PROMPT_CONFIG_PATH)
 
-embedding_model = HuggingFaceEmbeddings(
-    model_name=EMBEDDING_MODEL_NAME
-)
+embedding_function = load_embedding_function()
 
 handbook_client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
 try:
@@ -72,7 +69,7 @@ try:
 except NotFoundError:
     # handbook_db/ is not in git, so a fresh clone or deployment builds it on first start
     print("Handbook database not found, building it now (first start only)...")
-    ingest_handbook(HANDBOOK_PATH, handbook_client, embedding_model)
+    ingest_handbook(HANDBOOK_PATH, handbook_client, embedding_function)
     handbook_collection = handbook_client.get_collection(name="handbook")
 
 router_models = load_models("ROUTER_ORDER", DEFAULT_ROUTER_ORDER)
@@ -180,7 +177,7 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
         search_query = decision.search_query.strip() or user_question
         print(f"Performing vector search on the handbook for: {search_query}")
 
-        query_vector = embedding_model.embed_query(search_query)
+        query_vector = embedding_function([search_query])[0]
 
         results = handbook_collection.query(
             query_embeddings=[query_vector],

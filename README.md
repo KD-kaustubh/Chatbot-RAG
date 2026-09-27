@@ -37,7 +37,7 @@ The app uses three LLM providers:
 
 Answer order is AI Pipe → Gemini → Groq. Routing is a simple classification, so it runs on free Groq first to save the AI Pipe budget and Gemini quota for the answers. Each step falls back to the next provider: if one provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
 
-Embeddings are generated locally with `sentence-transformers/all-MiniLM-L6-v2`, so no API is needed for retrieval.
+Embeddings are generated locally with `all-MiniLM-L6-v2`, run through ONNX by ChromaDB, so retrieval needs no API and no PyTorch.
 
 ## Project structure
 
@@ -156,6 +156,6 @@ Out-of-scope questions ("What is the capital of France?") and prompt-injection a
 - **Framework:** LangChain
 - **LLMs:** OpenAI via AI Pipe (answers), Google Gemini (fallback), Groq (routing + fallback)
 - **Vector store:** ChromaDB
-- **Embeddings:** Hugging Face `sentence-transformers/all-MiniLM-L6-v2`
+- **Embeddings:** `all-MiniLM-L6-v2` (ONNX, via ChromaDB)
 - **UI:** Gradio
 - **Config & validation:** PyYAML, python-dotenv, Pydantic
