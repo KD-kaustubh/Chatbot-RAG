@@ -1,12 +1,14 @@
 # Environment variables
 .env
 
-# Database folders
+# Vector database (built by ingest.py)
 handbook_db/
-research_db/
 
 # Python cache
 __pycache__/
 
 # Virtual environment
 venv/
+
+# Gradio cache
+.gradio/
