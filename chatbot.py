@@ -7,8 +7,8 @@ import yaml
 from dotenv import load_dotenv
 import chromadb
 from langchain_huggingface import HuggingFaceEmbeddings
-from llm_providers import load_models, invoke_with_fallback
-from typing import List, Any, Dict
+from llm_providers import load_models, invoke_with_fallback, with_schema
+from typing import List, Any, Dict, Literal
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 
@@ -20,6 +20,11 @@ load_dotenv()
 HANDBOOK_DB_PATH = "./handbook_db"
 SUBJECTS_DB_PATH = "subjects_db.json"
 PROMPT_CONFIG_PATH = "config/rag_prompts.yaml"
+
+SERVICE_BUSY_MESSAGE = (
+    "Sorry, the AI service is busy right now and I couldn't get an answer. "
+    "Please try again in a minute."
+)
 
 
 def load_json_db(file_path: str) -> Dict[str, Any]:
@@ -63,7 +68,7 @@ class RouterOutput(BaseModel):
     """
     Defines the structured output for the router's decision.
     """
-    query_type: str = Field(description="The type of query. Either 'subject_content' or 'general_handbook_query'.")
+    query_type: Literal["subject_content", "general_handbook_query"] = Field(description="The type of query. Either 'subject_content' or 'general_handbook_query'.")
     subjects: List[str] = Field(description="A list of specific subject keyword found in user's question. Should be an empty list if query_type is 'general_handbook_query'.")
 
 
@@ -78,14 +83,19 @@ def get_router_decision(user_question: str) -> RouterOutput:
         input_variables=["user_question", "subject_keywords"]
     )
 
-    return invoke_with_fallback(
-        models,
-        lambda model: prompt | model.with_structured_output(RouterOutput, method="json_schema"),
-        {
-            "user_question" : user_question,
-            "subject_keywords" : subject_keywords
-        }
-    )
+    try:
+        return invoke_with_fallback(
+            models,
+            lambda model: prompt | with_schema(model, RouterOutput),
+            {
+                "user_question" : user_question,
+                "subject_keywords" : subject_keywords
+            }
+        )
+    except RuntimeError:
+        # Routing is only a hint, so fall back to a handbook search instead of failing.
+        print("Router unavailable, defaulting to handbook search.")
+        return RouterOutput(query_type="general_handbook_query", subjects=[])
 
 
 
@@ -140,13 +150,16 @@ def answer_question(user_question: str) -> str:
         input_variables=["context", "question"]
     )
 
-    ai_response = invoke_with_fallback(
-        models,
-        lambda model: prompt | model,
-        {
-            "context": context,
-            "question": user_question
-        }
-    )
+    try:
+        ai_response = invoke_with_fallback(
+            models,
+            lambda model: prompt | model,
+            {
+                "context": context,
+                "question": user_question
+            }
+        )
+    except RuntimeError:
+        return SERVICE_BUSY_MESSAGE
 
     return ai_response.text

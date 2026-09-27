@@ -5,6 +5,7 @@ Providers are tried in the order given by LLM_ORDER in .env (default: DEFAULT_OR
 If a provider errors, times out, hits a rate limit or returns an empty response,
 the next provider in the list is used.
 """
+import logging
 import os
 from typing import Any, Callable, Dict, List, Tuple
 
@@ -13,6 +14,11 @@ from langchain_core.messages import AIMessage
 from langchain_core.runnables import Runnable
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
+from pydantic import BaseModel
+
+
+# google-genai logs an "automatic function calling" warning on every request
+logging.getLogger("google_genai.models").setLevel(logging.ERROR)
 
 
 DEFAULT_ORDER = "gemini,groq"
@@ -24,7 +30,7 @@ def _gemini() -> BaseChatModel:
         model=os.getenv("GEMINI_MODEL", "gemini-flash-latest"),
         google_api_key=os.getenv("GEMINI_API_KEY"),
         timeout=REQUEST_TIMEOUT,
-        max_retries=1,
+        max_retries=2,  # Gemini often returns short-lived 503 "high demand" errors
     )
 
 
@@ -65,6 +71,16 @@ def load_models() -> List[Tuple[str, BaseChatModel]]:
 
     print(f"[LLM] Provider order: {' -> '.join(name for name, _ in models)}")
     return models
+
+
+def with_schema(model: BaseChatModel, schema: type[BaseModel]) -> Runnable:
+    """
+    Structured output that works on every provider. Groq needs strict mode,
+    otherwise gpt-oss sometimes echoes the JSON schema back instead of filling it.
+    """
+    if isinstance(model, ChatGroq):
+        return model.with_structured_output(schema, method="json_schema", strict=True)
+    return model.with_structured_output(schema, method="json_schema")
 
 
 def invoke_with_fallback(
