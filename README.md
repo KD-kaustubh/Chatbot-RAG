@@ -29,6 +29,8 @@ Embeddings are generated locally with `sentence-transformers/all-MiniLM-L6-v2`, 
 
 ```
 .
+├── assets/
+│   └── bot.svg             # Chat avatar for the web UI
 ├── config/
 │   └── rag_prompts.yaml    # Router and answer prompt templates
 ├── Data/                   # Source .txt documents (handbook + one file per subject)
@@ -91,7 +93,7 @@ This creates `handbook_db/` and regenerates `subjects_db.json` from the files in
 ```bash
 python app.py
 ```
-Open http://127.0.0.1:7860 in your browser.
+Open http://127.0.0.1:7860 in your browser. The page has an IITM-style maroon theme, a "Program at a glance" sidebar, suggested questions, and works in light/dark mode and on phones.
 
 **Command line**
 ```bash
