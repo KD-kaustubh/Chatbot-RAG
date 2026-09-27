@@ -1,5 +1,7 @@
 # Core AI Framework
 langchain
+langchain-community
+langchain-text-splitters
 
 # LLM Integration (Groq)
 langchain-groq
