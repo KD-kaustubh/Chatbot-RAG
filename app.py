@@ -7,10 +7,10 @@ from chatbot import answer_question
 def chat_with_agent(user_question, history):
     """
     This is the main function that Gradio's ChatInterface will call.
-    It takes the user's question, and returns the AI's response.
+    It takes the user's question and the chat so far, and returns the AI's response.
     """
     print(f"User Query: {user_question}")
-    return answer_question(user_question)
+    return answer_question(user_question, history)
 
 
 

@@ -8,6 +8,8 @@ if __name__ == "__main__":
     print("               (Type 'exit' to end the chat)")
     print("-" * 50)
 
+    history = []
+
     while True:
         user_question = input("You: ")
 
@@ -15,7 +17,10 @@ if __name__ == "__main__":
             print("AI Assistant: GoodBye! ")
             break
 
-        ai_response = answer_question(user_question)
+        ai_response = answer_question(user_question, history)
+
+        history.append({"role": "user", "content": user_question})
+        history.append({"role": "assistant", "content": ai_response})
 
         print(f"\nAI Assistant:\n{ai_response}\n")
         print("-" * 150 )

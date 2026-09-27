@@ -10,6 +10,8 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
    - Handbook questions run a semantic search over the handbook, stored in a local ChromaDB vector store.
 3. **Answering** – The retrieved context is passed to the LLM with a strict prompt: answer only from the documents, and refuse anything outside them (including prompt-injection attempts).
 
+The last few messages of the chat are sent along with each question, so follow-ups like "How is it graded?" work. The router rewrites them into a standalone question ("How is the Maths 1 course graded?") before searching.
+
 ### LLM providers and fallback
 
 The app uses two LLM providers:

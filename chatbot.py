@@ -11,7 +11,7 @@ from llm_providers import (
     load_models, invoke_with_fallback, with_schema,
     DEFAULT_ROUTER_ORDER, DEFAULT_ANSWER_ORDER,
 )
-from typing import List, Any, Dict, Literal
+from typing import List, Any, Dict, Literal, Optional
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 
@@ -27,6 +27,10 @@ PROMPT_CONFIG_PATH = "config/rag_prompts.yaml"
 # More subjects than this means a broad question, which the handbook answers better.
 # It also keeps the prompt under Groq's free-tier limit of 8k tokens per minute.
 MAX_SUBJECTS = 3
+
+# How much of the conversation is sent with each question
+MAX_HISTORY_MESSAGES = 6
+MAX_HISTORY_CHARS = 600
 
 SERVICE_BUSY_MESSAGE = (
     "Sorry, the AI service is busy right now and I couldn't get an answer. "
@@ -78,9 +82,45 @@ class RouterOutput(BaseModel):
     """
     query_type: Literal["subject_content", "general_handbook_query"] = Field(description="The type of query. Either 'subject_content' or 'general_handbook_query'.")
     subjects: List[str] = Field(description="A list of specific subject keyword found in user's question. Should be an empty list if query_type is 'general_handbook_query'.")
+    search_query: str = Field(description="The user's question rewritten as a standalone question, resolving references like 'it' from the conversation.")
 
 
-def get_router_decision(user_question: str) -> RouterOutput:
+
+#  ----  CHAT HISTORY ----
+
+def _message_text(content: Any) -> str:
+    """
+    Gradio can give message content as a plain string or as a list of parts.
+    """
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        return " ".join(part.get("text", "") if isinstance(part, dict) else str(part) for part in content)
+    return str(content or "")
+
+
+def format_history(history: Optional[List[Dict[str, Any]]]) -> str:
+    """
+    Turns the last few chat messages into plain text for the prompts.
+    Long answers are cut short to keep the prompt small.
+    """
+    if not history:
+        return "(no previous conversation)"
+
+    lines = []
+    for message in history[-MAX_HISTORY_MESSAGES:]:
+        role = "User" if message.get("role") == "user" else "Assistant"
+        text = _message_text(message.get("content")).strip()
+        if len(text) > MAX_HISTORY_CHARS:
+            text = text[:MAX_HISTORY_CHARS] + "..."
+        lines.append(f"{role}: {text}")
+    return "\n".join(lines)
+
+
+
+#  ----  LLM ROUTER LOGIC ----
+
+def get_router_decision(user_question: str, chat_history: str) -> RouterOutput:
     """
     Uses an LLM to classify the user's question and extract subject keywords.
     """
@@ -88,7 +128,7 @@ def get_router_decision(user_question: str) -> RouterOutput:
 
     prompt = PromptTemplate(
         template=prompt_configs['router_prompt'],
-        input_variables=["user_question", "subject_keywords"]
+        input_variables=["user_question", "subject_keywords", "chat_history"]
     )
 
     try:
@@ -97,13 +137,14 @@ def get_router_decision(user_question: str) -> RouterOutput:
             lambda model: prompt | with_schema(model, RouterOutput),
             {
                 "user_question" : user_question,
-                "subject_keywords" : subject_keywords
+                "subject_keywords" : subject_keywords,
+                "chat_history" : chat_history
             }
         )
     except RuntimeError:
         # Routing is only a hint, so fall back to a handbook search instead of failing.
         print("Router unavailable, defaulting to handbook search.")
-        return RouterOutput(query_type="general_handbook_query", subjects=[])
+        return RouterOutput(query_type="general_handbook_query", subjects=[], search_query=user_question)
 
 
 
@@ -127,9 +168,11 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
         context = "\n\n".join(subjects_db[subject_key] for subject_key in subjects)
 
     else:
-        print("Performing vector search on the handbook...")
+        # The standalone version finds better matches for follow-ups like "what about its fees?"
+        search_query = decision.search_query.strip() or user_question
+        print(f"Performing vector search on the handbook for: {search_query}")
 
-        query_vector = embedding_model.embed_query(user_question)
+        query_vector = embedding_model.embed_query(search_query)
 
         results = handbook_collection.query(
             query_embeddings=[query_vector],
@@ -143,17 +186,20 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
 
 
 #   ------ ANSWER GENERATION -----
-def answer_question(user_question: str) -> str:
+def answer_question(user_question: str, history: Optional[List[Dict[str, Any]]] = None) -> str:
     """
     Runs the full pipeline for one question: route -> retrieve -> generate.
+    history is the previous messages as [{"role": "user" | "assistant", "content": ...}].
     """
-    decision = get_router_decision(user_question)
+    chat_history = format_history(history)
+
+    decision = get_router_decision(user_question, chat_history)
 
     context = retrieve_context(user_question, decision)
 
     prompt = PromptTemplate(
         template=prompt_configs['rag_final_prompt'],
-        input_variables=["context", "question"]
+        input_variables=["context", "question", "chat_history"]
     )
 
     try:
@@ -162,7 +208,8 @@ def answer_question(user_question: str) -> str:
             lambda model: prompt | model,
             {
                 "context": context,
-                "question": user_question
+                "question": user_question,
+                "chat_history": chat_history
             }
         )
     except RuntimeError:
