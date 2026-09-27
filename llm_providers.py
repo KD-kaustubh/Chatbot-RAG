@@ -1,7 +1,9 @@
 """
 LLM providers with automatic fallback.
 
-Providers are tried in the order given by LLM_ORDER in .env (default: DEFAULT_ORDER).
+Two provider orders are used, both configurable in .env:
+- ROUTER_ORDER for classifying the question (default: groq,gemini)
+- LLM_ORDER for writing the answer (default: gemini,groq)
 If a provider errors, times out, hits a rate limit or returns an empty response,
 the next provider in the list is used.
 """
@@ -21,7 +23,8 @@ from pydantic import BaseModel
 logging.getLogger("google_genai.models").setLevel(logging.ERROR)
 
 
-DEFAULT_ORDER = "gemini,groq"
+DEFAULT_ROUTER_ORDER = "groq,gemini"  # routing is simple, keep Gemini quota for answers
+DEFAULT_ANSWER_ORDER = "gemini,groq"  # Gemini sticks closer to the documents
 REQUEST_TIMEOUT = 60  # seconds before giving up on a provider
 
 
@@ -49,16 +52,17 @@ PROVIDERS: Dict[str, Tuple[str, Callable[[], BaseChatModel]]] = {
 }
 
 
-def load_models() -> List[Tuple[str, BaseChatModel]]:
+def load_models(order_var: str, default_order: str) -> List[Tuple[str, BaseChatModel]]:
     """
-    Builds the chat models in fallback order, skipping any provider without an API key.
+    Builds the chat models in the fallback order read from the env var order_var,
+    skipping any provider without an API key.
     """
-    order = [p.strip().lower() for p in os.getenv("LLM_ORDER", DEFAULT_ORDER).split(",") if p.strip()]
+    order = [p.strip().lower() for p in os.getenv(order_var, default_order).split(",") if p.strip()]
 
     models = []
     for name in order:
         if name not in PROVIDERS:
-            print(f"[LLM] Unknown provider '{name}' in LLM_ORDER, skipping.")
+            print(f"[LLM] Unknown provider '{name}' in {order_var}, skipping.")
             continue
         key_var, factory = PROVIDERS[name]
         if not os.getenv(key_var):
@@ -69,7 +73,7 @@ def load_models() -> List[Tuple[str, BaseChatModel]]:
     if not models:
         raise RuntimeError("No LLM provider available. Set GEMINI_API_KEY and/or GROQ_API_KEY in .env")
 
-    print(f"[LLM] Provider order: {' -> '.join(name for name, _ in models)}")
+    print(f"[LLM] {order_var}: {' -> '.join(name for name, _ in models)}")
     return models
 
 

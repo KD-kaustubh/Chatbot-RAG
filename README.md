@@ -14,12 +14,12 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
 
 The app uses two LLM providers:
 
-| Order | Provider | Default model | Why |
-|-------|----------|---------------|-----|
-| 1 | Google Gemini | `gemini-flash-latest` | More accurate, stays closer to the source documents |
-| 2 | Groq | `openai/gpt-oss-20b` | Very fast and reliable, used as fallback |
+| Provider | Default model | Used for |
+|----------|---------------|----------|
+| Google Gemini | `gemini-flash-latest` | Writing answers (more accurate, stays closer to the source documents) |
+| Groq | `openai/gpt-oss-20b` | Routing questions (very fast), and fallback for answers |
 
-If the primary provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
+Routing is a simple classification, so it runs on Groq first to save Gemini's free-tier quota for the answers. Each step falls back to the other provider: if the primary provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
 
 Embeddings are generated locally with `sentence-transformers/all-MiniLM-L6-v2`, so no API is needed for retrieval.
 
@@ -71,7 +71,8 @@ You can run with just one of the two keys — the missing provider is skipped.
 
 Optional settings in `.env`:
 ```
-LLM_ORDER="gemini,groq"              # provider order, first one is primary
+LLM_ORDER="gemini,groq"              # provider order for answers, first one is primary
+ROUTER_ORDER="groq,gemini"           # provider order for routing
 GEMINI_MODEL="gemini-flash-latest"
 GROQ_MODEL="openai/gpt-oss-20b"
 ```
@@ -109,7 +110,7 @@ Out-of-scope questions ("What is the capital of France?") and prompt-injection a
 ## Tech stack
 
 - **Framework:** LangChain
-- **LLMs:** Google Gemini (primary), Groq (fallback)
+- **LLMs:** Google Gemini (answers), Groq (routing + fallback)
 - **Vector store:** ChromaDB
 - **Embeddings:** Hugging Face `sentence-transformers/all-MiniLM-L6-v2`
 - **UI:** Gradio

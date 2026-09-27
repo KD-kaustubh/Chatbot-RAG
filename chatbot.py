@@ -7,7 +7,10 @@ import yaml
 from dotenv import load_dotenv
 import chromadb
 from langchain_huggingface import HuggingFaceEmbeddings
-from llm_providers import load_models, invoke_with_fallback, with_schema
+from llm_providers import (
+    load_models, invoke_with_fallback, with_schema,
+    DEFAULT_ROUTER_ORDER, DEFAULT_ANSWER_ORDER,
+)
 from typing import List, Any, Dict, Literal
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
@@ -60,7 +63,8 @@ embedding_model = HuggingFaceEmbeddings(
 handbook_client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
 handbook_collection = handbook_client.get_collection(name="handbook")
 
-models = load_models()
+router_models = load_models("ROUTER_ORDER", DEFAULT_ROUTER_ORDER)
+answer_models = load_models("LLM_ORDER", DEFAULT_ANSWER_ORDER)
 
 print("Initialisation Complete. All components are ready.")
 print("-" * 50)
@@ -89,7 +93,7 @@ def get_router_decision(user_question: str) -> RouterOutput:
 
     try:
         return invoke_with_fallback(
-            models,
+            router_models,
             lambda model: prompt | with_schema(model, RouterOutput),
             {
                 "user_question" : user_question,
@@ -154,7 +158,7 @@ def answer_question(user_question: str) -> str:
 
     try:
         ai_response = invoke_with_fallback(
-            models,
+            answer_models,
             lambda model: prompt | model,
             {
                 "context": context,
