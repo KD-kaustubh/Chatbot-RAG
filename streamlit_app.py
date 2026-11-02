@@ -3,6 +3,10 @@ Streamlit version of the web UI, used for deploying on Streamlit Community Cloud
 Run locally with:  streamlit run streamlit_app.py
 """
 import os
+import sys
+import glob
+import hashlib
+import importlib
 import streamlit as st
 from ui_content import (
     EXAMPLES, HEADER_HTML, WELCOME_HTML, FOOTER_HTML, BRAND_CSS,
@@ -40,13 +44,31 @@ def _load_secrets_into_env():
         pass  # no secrets.toml, which is normal when running locally
 
 
-@st.cache_resource(show_spinner="Loading the knowledge base... the first start can take a minute.")
-def load_chatbot():
+# Files the chatbot is built from. When any of them changes (e.g. after a git push),
+# the chatbot is rebuilt instead of serving the old version until the app is rebooted.
+CHATBOT_SOURCES = ["ingest.py", "llm_providers.py", "chatbot.py", "config/rag_prompts.yaml",
+                   "subjects_db.json", "Data/handbook.txt", *sorted(glob.glob("Data/grading/*.txt"))]
+
+
+def chatbot_version() -> str:
+    digest = hashlib.sha256()
+    for path in CHATBOT_SOURCES:
+        with open(path, "rb") as f:
+            digest.update(f.read())
+    return digest.hexdigest()
+
+
+@st.cache_resource(max_entries=1, show_spinner="Loading the knowledge base... the first start can take a minute.")
+def load_chatbot(version: str):
     """
-    Imported once per server and shared by all visitors. The first import loads
-    the embedding model and builds the handbook database if it doesn't exist yet.
+    Built once per version and shared by all visitors. The first load downloads the
+    embedding model and builds the vector indexes if they don't exist yet.
     """
     _load_secrets_into_env()
+    if "chatbot" in sys.modules:
+        # A newer version of the code or data was deployed: reload the modules in dependency order
+        for name in ("ingest", "llm_providers", "chatbot"):
+            importlib.reload(sys.modules[name])
     import chatbot
     return chatbot
 
@@ -62,7 +84,7 @@ with st.sidebar:
         st.session_state.messages = []
         st.rerun()
 
-bot = load_chatbot()
+bot = load_chatbot(chatbot_version())
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
