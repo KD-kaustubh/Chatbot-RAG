@@ -14,9 +14,19 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
 
 1. **Routing** – An LLM reads the question and decides whether it is about a specific subject (e.g. "What will I learn in Computational Thinking?") or a general handbook question (e.g. "What are the rules for the end term exam?").
 2. **Retrieval**
-   - Subject questions get the full text of the matching subject document(s) from `subjects_db.json`.
-   - Handbook questions run a semantic search over the handbook, stored in a local ChromaDB vector store.
-3. **Answering** – The retrieved context is passed to the LLM with a strict prompt: answer only from the documents, and refuse anything outside them (including prompt-injection attempts).
+   - Subject questions get the full text of the matching subject document(s) from `subjects_db.json`, plus that course's section of the current term's grading document (exam dates, eligibility, grading formula).
+   - General questions run a semantic search over the current grading document and the handbook, both stored in a local ChromaDB vector store. Degree-level courses are answered from the grading document.
+3. **Answering** – The retrieved context is passed to the LLM with a strict prompt: answer only from the documents, and refuse anything outside them (including prompt-injection attempts). Each part of the context is labelled with its source, and when they disagree the current grading document wins over the older handbook and course documents.
+
+### Data sources
+
+| Source | File | Used for |
+|--------|------|----------|
+| Sep 2026 grading document | `Data/grading/sep2026_grading_document.txt` | Current term: quiz, OPPE and end term dates, assignment deadlines, eligibility rules and grading formulas for all 57 courses, projects, course offerings and fees |
+| Course documents | `Data/*.txt` (one per subject) | Syllabus and learning outcomes of the foundation and diploma subjects |
+| Student handbook | `Data/handbook.txt` | General program rules, levels, credits and policies (may be from an older term) |
+
+**Updating for a new term:** replace the grading document file (and `GRADING_TERM` in `ingest.py`). The app notices the file changed and rebuilds the grading index on its next start.
 
 The last few messages of the chat are sent along with each question, so follow-ups like "How is it graded?" work. The router rewrites them into a standalone question ("How is the Maths 1 course graded?") before searching.
 
@@ -45,6 +55,7 @@ Embeddings are generated locally with `all-MiniLM-L6-v2`, run through ONNX by Ch
 ├── config/
 │   └── rag_prompts.yaml    # Router and answer prompt templates
 ├── Data/                   # Source .txt documents (handbook + one file per subject)
+│   └── grading/            # Current term's grading document
 ├── handbook_db/            # ChromaDB vector store (created by ingest.py, git-ignored)
 ├── subjects_db.json        # Full text of every subject document
 ├── ingest.py               # Builds the knowledge bases from Data/
@@ -101,7 +112,7 @@ AI Pipe has a small weekly budget ($0.10 by default). One question costs about $
 
 **4. Knowledge base**
 
-The app builds the handbook vector store (`handbook_db/`) automatically the first time it starts. If you change the files in `Data/`, rebuild everything with:
+The app builds the vector store (`handbook_db/`, with the handbook and the grading document) automatically the first time it starts. If you change the files in `Data/`, rebuild everything with:
 ```bash
 python ingest.py
 ```

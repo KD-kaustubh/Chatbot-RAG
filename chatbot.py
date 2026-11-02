@@ -14,7 +14,10 @@ from typing import List, Any, Dict, Literal, Optional
 from pydantic import BaseModel, Field
 from langchain_core.prompts import PromptTemplate
 from chromadb.errors import NotFoundError
-from ingest import ingest_handbook, load_embedding_function, HANDBOOK_DB_PATH
+from ingest import (
+    ingest_handbook, ingest_grading, split_grading_sections, file_hash, load_embedding_function,
+    HANDBOOK_DB_PATH, GRADING_PATH, GRADING_TERM, KEY_DATES_TITLE,
+)
 
 
 
@@ -29,9 +32,36 @@ PROMPT_CONFIG_PATH = "config/rag_prompts.yaml"
 # It also keeps the prompt under Groq's free-tier limit of 8k tokens per minute.
 MAX_SUBJECTS = 3
 
+# Total size of the subject documents + their grading sections sent with one question
+MAX_SUBJECT_CONTEXT_CHARS = 18000
+
+# Chunks taken from each source for general (non-subject) questions
+GRADING_RESULTS = 5
+HANDBOOK_RESULTS = 5
+
 # How much of the conversation is sent with each question
 MAX_HISTORY_MESSAGES = 6
 MAX_HISTORY_CHARS = 600
+
+# Subject documents in Data/ -> course code of their section in the grading document
+SUBJECT_COURSE_CODES = {
+    "Maths1": "MA1001", "English1": "HS1001", "Computational_Thinking(CT)": "CS1001",
+    "Stats1": "MA1002", "Maths2": "MA1003", "English2": "HS1002",
+    "Python_Programming": "CS1002", "Stats2": "MA1004",
+    "Machine_learning_foundation(MLF)": "CS2004", "Machine_learning_technique(MLT)": "CS2007",
+    "Machine_learning_practise(MLP)": "CS2008", "Bussiness_data_management(BDM)": "MS2001",
+    "Bussiness_analytics(BA)": "MS2002", "Tools_in_data_science(TDS)": "SE2002",
+    "Data_structures_algorithm_in_python(PDSA)": "CS2002", "Database_management_system(DBMS)": "CS2001",
+    "Modern_app_dev_1(MAD1)": "CS2003", "Programming_in_java": "CS2005",
+    "System_commands(SC)": "SE2001", "Modern_app_dev_2(MAD2)": "CS2006",
+    "Intro_to_dl_and_genAI": "DA2001",
+}
+# Project subjects get the "Project Courses" section of the grading document instead
+PROJECT_SUBJECTS = {
+    "Bussiness_data_management_project(BDMProject)", "Machine_learning_practise_project(MLPProject)",
+    "Modern_app_dev_project_1(MAD1Project)", "Modern_app_dev_project_2(MAD2Project)",
+    "Intro_to_dl_and_genAI_Project",
+}
 
 SERVICE_BUSY_MESSAGE = (
     "Sorry, the AI service is busy right now and I couldn't get an answer. "
@@ -71,6 +101,25 @@ except NotFoundError:
     print("Handbook database not found, building it now (first start only)...")
     ingest_handbook(HANDBOOK_PATH, handbook_client, embedding_function)
     handbook_collection = handbook_client.get_collection(name="handbook")
+
+# Current term's grading document: per-course sections for subject questions,
+# and its own vector index for general questions.
+with open(GRADING_PATH, encoding="utf-8") as f:
+    grading_sections = split_grading_sections(f.read())
+grading_by_code = {s["code"]: s for s in grading_sections if s["code"]}
+project_grading_section = next(s for s in grading_sections if s["title"] == "Project Courses")
+# Only the summary lines, not the raw schedule tables that follow them in the same section
+key_dates_text = next(s for s in grading_sections if s["title"] == KEY_DATES_TITLE)["text"].split("\n\n")[0]
+
+try:
+    grading_collection = handbook_client.get_collection(name="grading")
+    if (grading_collection.metadata or {}).get("source_hash") != file_hash(GRADING_PATH):
+        raise NotFoundError("grading document changed")
+except NotFoundError:
+    # first start, or the grading document was replaced with a newer one
+    print("Building the grading document index...")
+    ingest_grading(GRADING_PATH, handbook_client, embedding_function)
+    grading_collection = handbook_client.get_collection(name="grading")
 
 router_models = load_models("ROUTER_ORDER", DEFAULT_ROUTER_ORDER)
 answer_models = load_models("LLM_ORDER", DEFAULT_ANSWER_ORDER)
@@ -170,23 +219,49 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
 
     if query_type == "subject_content":
         print(f"Retrieving content for subject(s): {subjects}")
-        context = "\n\n".join(subjects_db[subject_key] for subject_key in subjects)
+        budget = MAX_SUBJECT_CONTEXT_CHARS // len(subjects)
+        context = "\n\n========\n\n".join(subject_context(subject_key, budget) for subject_key in subjects)
 
     else:
         # The standalone version finds better matches for follow-ups like "what about its fees?"
         search_query = decision.search_query.strip() or user_question
-        print(f"Performing vector search on the handbook for: {search_query}")
+        print(f"Performing vector search on the grading document and handbook for: {search_query}")
 
         query_vector = embedding_function([search_query])[0]
 
-        results = handbook_collection.query(
-            query_embeddings=[query_vector],
-            n_results=10,
-            include=["documents"]
+        grading_results = grading_collection.query(
+            query_embeddings=[query_vector], n_results=GRADING_RESULTS, include=["documents"]
         )
-        context = "\n\n----\n\n".join(results["documents"][0])
+        handbook_results = handbook_collection.query(
+            query_embeddings=[query_vector], n_results=HANDBOOK_RESULTS, include=["documents"]
+        )
+        context = (
+            f"SOURCE: {GRADING_TERM} grading document (current term)\n\n"
+            + key_dates_text + "\n\n----\n\n"
+            + "\n\n----\n\n".join(grading_results["documents"][0])
+            + "\n\n========\n\nSOURCE: Student handbook (general program rules, may be from an older term)\n\n"
+            + "\n\n----\n\n".join(handbook_results["documents"][0])
+        )
 
     return context
+
+
+def subject_context(subject_key: str, budget: int) -> str:
+    """
+    A subject's course document plus its section of the current grading document,
+    trimmed to fit the budget. The grading section comes first since it's the newest.
+    """
+    if subject_key in PROJECT_SUBJECTS:
+        grading = project_grading_section
+    else:
+        grading = grading_by_code.get(SUBJECT_COURSE_CODES.get(subject_key))
+
+    parts = []
+    if grading:
+        parts.append(f"SOURCE: {GRADING_TERM} grading document (current term) — {grading['title']}\n\n{grading['text']}")
+    parts.append(f"SOURCE: Course document — {subject_key}\n\n{subjects_db[subject_key]}")
+
+    return "\n\n----\n\n".join(parts)[:budget]
 
 
 

@@ -1,0 +1,6244 @@
+BS-DS Sep 2026 Grading document (Student)
+Source: IITM BS published Google Doc "BS-DS_ Sep 2026 Grading document (Student)". This is the official grading document for the Sep 2026 term and is newer than the student handbook and the course documents.
+
+Key exam dates (Sep 2026 term)
+Summary copied from the schedule tables below.
+- Quiz 1 (in person at centres, all courses that have Quiz 1): Sunday, November 15, 2026, 2pm-6pm
+- Quiz 2 (in person at centres, all courses that have Quiz 2): Saturday, December 5, 2026, 2pm-6pm
+- End term exam (in person at centres): Sunday, January 10, 2027, 9am-12pm and 2pm-5pm
+- OPPE 1 (remote proctored programming exam): Sunday, November 22, 2026
+- OPPE 2 Day 1 (remote proctored programming exam): Sunday, December 20, 2026
+- OPPE 2 Day 2 (remote proctored programming exam): Sunday, January 3, 2027
+- TDS Remote Online Exam (ROE): Sunday, November 29, 2026
+Some courses have no Quiz 1 or no Quiz 2; check the course's own section below.
+
+Grading Document
+
+IITM's BS in Data Science and Applications program
+
+Sep 2026 TERM GRADING DOCUMENT
+
+
+The following is the schedule of the 2 quizzes and final exam which students have to attend in person at centres across the country and outside India.
+
+Quiz 1
+
+Quiz 2
+
+End term exam
+
+Sunday, November 15, 2026
+
+Saturday, December 5, 2026
+
+Sunday, January 10, 2027
+
+2pm-6pm*
+
+2pm-6pm*
+
+9am-12pm, 2pm-5pm
+
+In person In centres
+
+In person In centres
+
+In person In centres
+
+*(If required and, we will do a morning session for the quiz)
+
+
+The following is the schedule of programming exams which will be conducted in remote proctored online mode.
+
+
+OPPE1
+
+Day1
+
+OPPE2
+
+Day 1
+
+OPPE2
+
+Day 2
+
+Sunday, November 22, 2026
+
+Sunday, December 20, 2026
+
+Sunday, January 3, 2027
+
+FL - Python
+
+DIPLOMA - MLP,
+
+DIPLOMA:
+
+Java
+
+DEGREE - C prog
+
+Intro to Big data, MLOPS
+
+DIPLOMA - SC DBMS
+
+PDSA
+
+Java
+
+MLP
+
+DEGREE- Intro to Big data
+
+FL- C Programming
+
+FL - Python
+
+DIPLOMA - SC, Exceptions alone (DBMS, Java, PDSA)
+
+DEGREE -
+
+MLOPS
+
+
+*The actual timings of the various sessions will be informed and allocated to you closer to the date of the exam.
+
+
+All courses that have oppe: Eligibility to appear for the OPPE 1
+
+Student has to complete the OPPE System Compatibility Test (SCT) exam
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document
+
+OPPE1 will not be scheduled for students who fail to complete the OPPE SCT exam.
+
+
+Eligibility to appear for the OPPE 2:
+
+Most courses have eligibility criteria to attend the final exam.
+
+In case you do not become eligible to write the final exam, OPPE2 will also not be scheduled for you as you will be awarded WA/WQ grade and anyway have to repeat the entire course the next time including all assessment components.
+
+In addition, Python, PDSA and Java have criteria based on GrPA scores of weeks 1-8 to be eligible to appear for the OPPEs. Please check the grading formula for these courses for more details.
+
+
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+*TDS has a Remote Online Exam (ROE), which is a non-proctored, open internet exam. No SCT is required for TDS.
+
+
+We might have additional dates for OPPEs depending on the number of students who register for courses with OPPEs. These dates could be any date and timing of OPPE week.
+
+Once we know the actual registration numbers for every course, we will finalise the dates and timings.
+
+
+OPPE SCHEDULE (Sep 2026 TERM)
+
+
+Exam
+
+Timing
+
+Python
+
+DBMS
+
+PDSA
+
+Java
+
+SC/
+
+Linux
+
+MLP
+
+C
+
+MLOPS
+
+IBD
+
+
+Sunday, November 22, 2026
+
+
+OPPE1
+
+09:30 AM to 11:30 AM
+
+1A
+
+1A
+
+1A
+
+
+01:00 PM to
+
+03:00 PM
+
+1B
+
+1A
+
+
+01:00 PM to 01:45 PM
+
+
+04:30 PM to
+
+06:30 PM
+
+1C
+
+1A
+
+1B
+
+
+04:30 PM to
+
+07:30 PM
+
+1A
+
+
+Sunday, December 20, 2026
+
+
+Exam
+
+Timing
+
+Python
+
+DBMS
+
+PDSA
+
+Java
+
+SC/
+
+Linux
+
+MLP
+
+C
+
+MLOPS
+
+IBD
+
+
+OPPE 2
+
+(Day 1)
+
+09:30 AM to 11:30 AM
+
+2A
+
+2A
+
+
+01:00 PM to
+
+03:00 PM
+
+2B
+
+2A
+
+2A
+
+2A
+
+
+2.00 PM to 6.00 PM
+
+
+04:30 PM to
+
+06:30 PM
+
+2C
+
+2B
+
+2A
+
+
+04:30 PM to
+
+08:00 PM
+
+2A
+
+
+Sunday, January 3, 2027
+
+
+Exam
+
+Timing
+
+Python
+
+DBMS
+
+PDSA
+
+Java
+
+SC/
+
+Linux
+
+MLP
+
+C
+
+MLOPS
+
+
+OPPE 2
+
+(Day 2)
+
+09:30 AM to 11:30 AM
+
+2A
+
+2C
+
+2B
+
+
+01:00 PM to
+
+03:00 PM
+
+2B
+
+2B
+
+
+2.00 PM to 5.00 PM
+
+2B
+
+
+04:30 PM to
+
+06:30 PM
+
+2C
+
+2D
+
+
+*SUBJECT TO CHANGE
+
+ASSIGNMENT DEADLINES:
+
+
+TermStartT3
+
+TermStart
+
+ContentRelease
+
+Foundation/Degree/Diploma Deadlines
+
+Comments
+
+Week 1T3
+
+Week 1
+
+Friday, October 2, 2026
+
+Sunday, October 11, 2026
+
+
+Week 2 T3
+
+Week 2
+
+Friday, October 9, 2026
+
+Sunday, October 18, 2026
+
+
+Week 3T3
+
+Week 3
+
+Friday, October 16, 2026
+
+Sunday, October 25, 2026
+
+
+Week 4T3
+
+Week 4
+
+Friday, October 23, 2026
+
+Sunday, November 1, 2026
+
+OPPE 1 eligibility closes
+
+Week 5T3
+
+Week 5
+
+Friday, October 30, 2026
+
+Wednesday, November 11, 2026
+
+
+Week 6T3
+
+Week 6
+
+Friday, November 6, 2026
+
+Wednesday, November 18, 2026
+
+
+Week 7T3
+
+Week 7
+
+Friday, November 13, 2026
+
+Wednesday, November 25, 2026
+
+End term eligibility closes
+
+Week 8T3
+
+Week 8
+
+Friday, November 20, 2026
+
+Sunday, November 29, 2026
+
+OPPE2 - eligibility closes
+
+Week 9T3
+
+Week 9
+
+Friday, November 27, 2026
+
+Sunday, December 6, 2026
+
+
+Week 10T3
+
+Week 10
+
+Friday, December 4, 2026
+
+Sunday, December 13, 2026
+
+GAA calculation closes
+
+Week 11T3
+
+Week 11
+
+Friday, December 11, 2026
+
+Wednesday, December 23, 2026
+
+
+Week 12T3
+
+Week 12
+
+Friday, December 11, 2026
+
+Wednesday, December 23, 2026
+
+
+NONE OF THE ASSIGNMENT DEADLINES WILL BE CHANGED THIS TIME FROM THE SCHEDULE GIVEN ABOVE. THE DATES HAVE BEEN SUFFICIENTLY ADJUSTED FOR ACCOMMODATING THE QUIZZES AND OPPES.
+
+
+Week 7 - eligibility for final exams for most courses depends on the average assignment scores of best 5 out of the first 7 weeks. The dates are highlighted in green here.
+
+Week 10 - GAA score for final grade will be taken and calculated for applicable courses
+
+
+Weightage for GAA in Foundation Level courses is being made 0. Questions for a total of 10 marks in the 2 quizzes and End term exam will come from the assignments.
+
+Weightage for GAA in Diploma Level courses will be 5 marks. Questions for a total of 5 marks in the 2 quizzes and End term exam will come from the assignments.
+
+Weightage for GAA in Degree Level courses remains unchanged.
+
+CHECK EVERY COURSE GRADING PATTERN TO SEE ACTUAL WEIGHTAGES.
+
+
+Bonus Marks
+Bonus Marks are for encouraging and incentivising the students to participate more in the activities of the course.
+
+These marks will be added ONLY for the students who pass the course and will only impact the course grade, and not the pass criteria. Criteria for bonus marks:
+
+Marks will be applicable based on availability of mock activities in the course. It can vary from course to course and can range from 0-2.
+
+
+If the average of the marks obtained in all the mock tests conducted before Quiz 1 & Quiz 2 >= 40/100, students will get 2 marks. The mock tests have to be done within the time specified.
+The course team may set up additional activities in the course which will be eligible for up to 3 bonus marks. If no additional activities are set up, this bonus won't be applicable.
+
+Participation in the discourse forum: Badges
+
+We will be looking at active engagement with Discourse in a term and provide badges for participation.
+
+Badges will be given based on the number of hours a student spends on Discourse. A student is expected to spend a minimum of 1 hour per week per course in Discourse reading posts.
+
+Student will get the following badges:
+
+Read time of up to 4 hours per course in a term: Badge 1
+
+Read time of up to 8 hours per course in a term: Badge 2
+
+Read time of up to 12 hours per course or more: Badge 3
+
+(Applicable only after you get the BS student roll number)
+
+
+Information about course grades:
+S,A,B,C,D,E - Pass grade; U/WA/WQ - Fail grade ;  I - Incomplete
+
+
+In I grade - there are 3 types:
+
+If you are absent for ET alone but all other assessment components are completed (quizzes, OPPEs, project, weekly assignments) - grade will be pushed as I.
+Options: You can register to take up the ET exam alone in the subsequent term. OPPE and quizzes will not be scheduled for you. All other marks for Final course score will be taken from the previous run. The fee will be charged only for the end term exam.
+
+OR
+
+You can choose to repeat the entire course paying the full course fees.
+
+If you have failed in the OPPE but wrote the ET exam and crossed the cutoff for T as given in the course grading policy, grade = I_OP.
+You can register to do the OPPE alone whereby if the course has one OPPE, that will be scheduled. If the course has 2 OPPEs, both will be scheduled for you. You can attempt the OPPE alone. All other mark components of Final course score will be taken from the previous run. ET and quizzes will not be scheduled for you.
+
+If you have failed in the OPPE and absent for ET, then grade = I_BOTH
+You can register for ET and OPPEs alone. If the course has one OPPE, that will be scheduled. If the course has 2 OPPEs, both will be scheduled for you. You will attempt the ET and OPPEs. Quiz and GAA and other components will be taken from the previous run and not scheduled.
+
+
+In all the above cases, you can also choose to Repeat the entire course and not just do the ET/OPPE alone if you want to reattempt all assessment components.
+
+
+ASSIGNMENT DEADLINES:
+
+Bonus Marks
+
+Information about course grades:
+
+Suggested pathway to register and study Foundation level courses:
+
+Foundation level courses
+
+1. Mathematics for data science 1
+
+2. English 1
+
+3. Computational Thinking
+
+4. Statistics for data science 1
+
+5. Mathematics for data science 2
+
+6. English 2
+
+7. Intro to python programming
+
+8.  Statistics for data science 2
+
+Diploma Level courses
+
+Suggested pathway to register and study Diploma level courses:
+
+Diploma level courses
+
+1. Machine Learning foundations (DS Diploma)
+
+2. Machine Learning Techniques (Diploma in DS)
+
+3. Machine Learning Practice (Diploma in DS)
+
+4. Business Data management (DS Diploma)
+
+5. Business Analytics (Diploma in DS)
+
+Business Analytics (BA) Assignment Deadlines
+
+6. Tools in Data Science (Diploma in DS) [Co-requisite for this course is MLP]
+
+7. Programming Data structures and algorithms using Python (PDSA) - Diploma in Programming
+
+8. Database management system (DBMS) - Diploma in Programming
+
+9. Application development - 1 (Diploma in programming)
+
+10. Programming concepts using Java (Diploma in programming)
+
+11. System commands (Diploma in programming)
+
+12. Application Development - 2 (Diploma in programming)
+
+13.Introduction to Deep Learning and Generative AI
+
+Guideline documents:
+
+Deep learning and Generative AI Project
+
+Timelines (Appdev1, Appdev2 & MLP, BDM projects):
+
+Degree Level courses
+
+1. Software Testing
+
+2. Software Engineering
+
+3. Deep Learning
+
+4. AI: Search Methods for Problem Solving
+
+5. Strategies for Professional Growth
+
+6. Programming in C
+
+7. Deep Learning for CV
+
+8. Large Language Models
+
+9. Deep Learning Practice
+
+10.Data Science and AI Lab
+
+11.Application Development Lab
+
+12.Big Data and Biological Networks
+
+13.Industry 4.0
+
+14.Mathematical Thinking
+
+15. MLOPS (Machine Learning Operations)
+
+16. Mathematical Foundations of Generative AI
+
+17.Speech Technology
+
+18. Design Thinking for Data-Driven App Development
+
+19.Financial Forensics
+
+20.Introduction to Big Data
+
+21.Linear Models with Applications
+
+22.Special topics in ML (Reinforcement Learning)
+
+23.Corporate Finance
+
+24.Computer Networks
+
+25. Computer Systems Design
+
+26. Game Theory and Strategy
+
+27. Algorithms for Data Science (ADS)
+
+28. Compiler Design
+
+29. Sequential Decision Making
+
+30. Operating Systems
+
+31. Discrete Mathematics
+
+32. Digital IC Design
+
+33. Electronic Testing and Measurement
+
+34. Communication Systems
+
+35. Digital System Design
+
+36. Computer Organization
+
+
+Annexure I
+
+Suggested pathway to register and study Foundation level courses:
+
+For those entering Foundation Level in MAY 2024 or after, kindly go through the new rules: 4/6/8 courses to be completed in 4/6/9 terms. Else you will be removed from the program.
+
+Academic policies:
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+Foundation level courses
+1. Mathematics for data science 1 (MA1001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term: January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2)
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+2. English 1 (HS1001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2)
+
+( W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+3. Computational Thinking (CS1001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        T = max (0.6F + 0.3max(Qz1, Qz2),  0.45F + 0.25Qz1 + 0.3Qz2)
+
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+4. Statistics for data science 1 (MA1002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+Extra activity - will be defined in the course on the portal
+
+        T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2) + Bonus marks for Extra activity - capped to 5
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+Bonus marks for course specific activity: 5 marks in total - 3.75 marks for weekly extra activity + 1.25 marks based on the quality of activity (Instructors' and Faculty's discretion)
+
+Note : "Extra Activity marks will be added to the T score only when you pass the course."
+
+
+Extra Activity for Statistics- I Assignment Deadline
+
+Note: If a student does not complete the required number (at least 5) of peer reviews, he/she will be awarded 0 marks for that activity even if he/she submitted the activity.
+
+
+Extra activity
+
+Release date for extra activity
+
+End date of submission
+
+End date for peer review
+
+Extra Activity 1
+
+Friday 13 Nov 2026
+
+Wednesday 25 Nov 2026
+
+Sunday 29 Nov 2026
+
+Extra Activity 2
+
+Friday 13 Nov 2026
+
+Wednesday 25 Nov 2026
+
+Sunday 29 Nov 2026
+
+Extra Activity 3
+
+Friday 27 Nov 2026
+
+Wednesday 9 Dec 2026
+
+Sunday 13 Dec 2026
+
+Extra Activity 4
+
+Friday 11 Dec 2026
+
+Wednesday 23 Dec 2026
+
+Sunday 27 Dec 2026
+
+
+5. Mathematics for data science 2  (MA1003)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        B = Bonus marks for course specific activity (out of 6)
+
+       T = max(0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2) + B — capped to 100.
+
+
+Bonus marks for course specific activity: 6 marks in total: 3 assignments of 2 marks each. The assignments will be available on the portal on the following dates.
+
+Extra Activity for Mathematics-II Assignment Deadline:
+
+
+EA
+
+Release Date for Extra activity
+
+Assignment Submission Deadline
+
+Extra Activity 1
+
+Friday, October 23, 2026
+
+Saturday, October 31, 2026
+
+Extra Activity 2
+
+Friday, November 6, 2026
+
+Saturday, November 14, 2026
+
+Extra Activity 3
+
+Friday, November 27, 2026
+
+Saturday, December 5, 2026
+
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+6. English 2 (HS1002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2)
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+7. Programming in Python (CS1002)
+
+Academic policies
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+
+Quiz 1: November  15 2026           Quiz 2: No Quiz        End term:  January 10 2027
+
+OPPE1: Sunday, November 22, 2026
+OPPE2: Sunday, January 3, 2027
+
+
+Depending on your eligibility for OPPE1 & OPPE2, you will be allocated one of the slots mentioned above by the team. Please keep yourself free on the dates given.
+
+
+Eligibility for Bonus:
+
+Only if you do the SCT, will the bonus be applicable to you and be added to your final course score. Even if you attend the mock tests, only if you do the sct, you will get the bonus.
+
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+Syllabus for OPPE 1 - Week1 to Week 5
+
+Syllabus for OPPE 2 - Week1 to Week 8
+
+
+GA  = Graded Assignment
+
+GRPA =Graded Programming Assignment
+
+
+A1: Average of GrPA scores in week 1
+
+A2: Average of GrPA scores in week 2
+
+A3: Average of GrPA scores in week 3
+
+A4: Average of GrPA scores in week 4
+
+A5: Average of GrPA scores in week 5
+
+A6: Average of GrPA scores in week 6
+
+A7: Average of GrPA scores in week 7
+
+A8: Average of GrPA scores in week 8
+
+
+Eligibility criteria for writing OPPE1
+
+Completing SCT
+
+AND
+
+A1>=40/100 AND A2>=40/100 AND A3>=40/100 AND A4>=40/100
+
+
+Eligibility criteria for writing OPPE2
+
+Completing SCT
+
+AND
+
+A5>=40/100 AND A6>=40/100 AND A7>=40/100 AND A8>=40/100
+
+AND
+
+Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100 (becoming eligible to give the end term exam)
+
+If you do not satisfy this, we will not schedule OPPE2 for you.
+
+
+Eligibility to appear for the end term exam is as follows:
+
+Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100
+
+AND
+
+Being eligible to appear for at least one of the 2 OPPEs. If you are ineligible for both, you have to repeat the entire course.
+
+
+Eligibility to obtain the final course grade: Both the conditions below should be satisfied.
+
+Attending the end term exam AND
+Minimum score to be obtained in one of the programming exams (OPPE1, OPPE2) should be >= 40/100
+
+The calculation of Final course Score for eligible students is as follows:
+
+
+Qz1 = score in Quiz I (0, if not attempted) - in centre
+
+PE1 = score in OPPE1 (0, if not attempted) - programming exam 1
+
+PE2 = score in OPPE2 (0, if not attempted) - programming exam 2
+
+F = score in final exam
+
+
+T = 0.15Qz1+ 0.4F+ 0.25 max(PE1, PE2) + 0.2 min(PE1, PE2)
+
+
+OPE1/ OPE2
+
+ET
+
+T
+
+Grade
+
+Possibilities for student
+
+1.
+
+Absent/ In eligible
+
+Absent/ In eligible
+
+ -
+
+U
+
+Repeat the course.
+
+2.
+
+Absent
+
+Present
+
+>=35
+
+I_OP
+
+Complete OPPE alone in next term;Both oppes will be scheduled.
+
+GA, quiz and ET marks will be carried over
+
+OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+score< 40/100
+
+Present
+
+>=40
+
+I_OP
+
+Complete OPE alone in next term, Both oppes will be scheduled.
+
+GA, quiz and ET marks will be carried over
+
+OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_BOTH
+
+Complete ET and OPE in next term, Both oppes will be scheduled.
+
+GA and quiz marks will be carried over
+
+OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > =40/100
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term;
+
+OPPE will NOT be scheduled.
+
+GA, quiz and OPPE marks will be carried over
+
+OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Grade as per the Total score T
+
+8.  Statistics for data science 2 (MA1004)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026        End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+
+The calculation of Final course Score for eligible students is as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2) + Bonus marks for Extra activity - capped to 5
+
+(W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+Bonus marks for course specific activity: 5 marks in total - 3.75 marks for weekly extra activity + 1.25 marks based on the quality of activity (Instructors' and Faculty's discretion)
+
+Note : "Extra Activity marks will be added to T-score only when you pass the course."
+
+
+Extra Activity for Statistics- II Assignment Deadline
+
+Note: If a student does not complete the required number (at least 5) of peer review, he will be awarded 0 marks for that activity even if he/she submitted the activity.
+
+
+Extra activity
+
+Release date for extra activity
+
+End date of submission
+
+End date for peer review
+
+Extra Activity 1
+
+Friday, 2 October 2026
+
+Wednesday, 14 October 2026
+
+Sunday, 18 October 2026
+
+Extra Activity 2
+
+Friday, 16 October 2026
+
+Wednesday, 28 October 2026
+
+Sunday, 1 November 2026
+
+Extra Activity 3
+
+Friday, 30 October 2026
+
+Wednesday, 11 November 2026
+
+Wednesday, 18 November 2026
+
+Extra Activity 4
+
+Friday, 13 November 2026
+
+Wednesday, 25 November 2026
+
+Sunday, 29 November 2026
+
+Extra Activity 5
+
+Friday, 27 November 2026
+
+Wednesday, 9 December 2026
+
+Sunday, 13 December 2026
+
+Diploma Level courses
+Suggested pathway to register and study Diploma level courses:
+Most aggressive pathway - completing in 4 terms - ONLY IF YOU ARE DOING THIS AS FULL TIME AND NOTHING ELSE AND CAN SPEND 70 HRs PER WEEK MINIMUM
+Comfortable pathway - 6 terms - 2 years : Suggested for students and working professionals doing this along with another degree or their job (40hrs/week)
+Those from non technical backgrounds, new to programming or have busy schedules, recommended to take 6 or 7 terms for the 2 diplomas.
+Same sequence of courses are suggested if you are taking only the Diploma in programming or Diploma in DS separately too.
+Maximum number of terms to complete both Diplomas: 12
+
+
+7 Terms
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+Term6
+
+Term7
+
+A VERY COMFORTABLE PATH - RECOMMENDED FOR THOSE WHO STILL ARE SLOW ON CODING AND MATHS AND CAN TAKE TIME. FOUNDATION - 3 OR 4 TERMS, DIPLOMA - 7 TERMS, BSC+BS - 5 TERMS, SO TOTAL OF 16 TERMS OR 5 YEARS.
+
+VERY APT FOR WORKING PROFESSIONALS AND DUAL DEGREE STUDENTS
+
+BDM Theory
+
+DBMS
+
+MAD 1 Theory
+
+Mad 1 Project
+
+Mad 2 Theory
+
+Mad 2 Project
+
+Java
+
+BDM Project
+
+PDSA
+
+MLF
+
+MLT
+
+MLP
+
+BA
+
+TDS
+
+SC
+
+MLP Project
+
+
+9c
+
+8c
+
+8c
+
+6c
+
+8c
+
+8c
+
+7c
+
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+Term6
+
+Term7
+
+DBMS
+
+MAD 1 Theory
+
+Mad 1 Project
+
+Mad 2 Theory
+
+MLP Project
+
+DL-Gen Ai Project
+
+Java
+
+PDSA
+
+MLF
+
+MLT
+
+MLP
+
+Mad 2 Project
+
+BDM
+
+TDS
+
+SC
+
+DL-Gen Ai Theory
+
+
+8c
+
+8c
+
+9c
+
+8c
+
+8c
+
+6c
+
+7c
+
+
+6 Terms
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+Term6
+
+
+VERY COMFORTABLE PATH - HIGHLY RECOMMENDED.
+
+FOUNDATION - 1 YEAR
+
+DIPLOMA - 2 YEARS
+
+BSC AND BS IN 1YEAR AND 4/8 MONTHS
+
+PROGRAM COMPLETED IN 4 YEARS AND 1 TERM
+
+VERY APT FOR WORKING PROFESSIONALS AND STANDALONE/DUAL DEGREE STUDENTS
+
+DBMS
+
+PDSA
+
+MAD 1 Theory
+
+Mad 1 Project
+
+Mad 2 Theory
+
+MLP project
+
+
+BDM Theory
+
+MLF
+
+SC
+
+MLT
+
+MLP
+
+Mad 2 Project
+
+
+BDM Project
+
+BA
+
+Java
+
+
+TDS
+
+
+8c
+
+10c
+
+11c
+
+10c
+
+8c
+
+7c
+
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+Term6
+
+
+DBMS
+
+PDSA
+
+MAD 1 Theory
+
+Mad 1 Project
+
+TDS
+
+
+BDM Theory
+
+MLT
+
+SC
+
+Mad 2 Theory
+
+Mad 2 Project
+
+Java
+
+
+MLF
+
+
+MLP
+
+MLP Project
+
+DL-Gen Ai Theory
+
+DL-Gen Ai Project
+
+
+12c
+
+8c
+
+11c
+
+8c
+
+9c
+
+6c
+
+
+5 Terms
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+
+DECENT PACE - CAN BE MANAGED IF YOU ARE COMFORTABLE WITH PYTHON AND MATHS. NOT VERY HECTIC
+
+
+FOUNDATION - 2 OR 3 TERMS
+
+DIPLOMA - 5 TERMS
+
+BSC/BS - 4 TERMS
+
+FULL PROGRAM - 12 TERMS OR 4 YEARS
+
+CORRECT SPEED TO DO THE PROGRAM
+
+RECOMMENDED FOR STANDALONE STUDENTS
+
+DBMS
+
+MLF
+
+BDM Theory
+
+BDM Project
+
+BA
+
+
+PDSA
+
+MAD1 project
+
+MLT
+
+MLP
+
+Java
+
+
+MAD1 Theory
+
+MAD2 Theory
+
+MAD2 Project
+
+SC
+
+TDS
+
+
+MLP Project
+
+
+12c
+
+10c
+
+10c
+
+9c
+
+13c
+
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+Term5
+
+
+DBMS
+
+BDM Theory
+
+MAD2 Theory
+
+MAD2 Project
+
+TDS
+
+
+PDSA
+
+MAD1 Theory
+
+MAD1 Project
+
+SC
+
+Java
+
+
+MLF
+
+MLT
+
+MLP
+
+MLP Project
+
+DL-Gen Ai Project
+
+
+DL-Gen Ai
+
+
+12c
+
+12c
+
+10c
+
+11c
+
+9c
+
+
+4 Terms
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+
+EXTREMELY HECTIC AND NOT RECOMMENDED UNLESS YOU ARE A FULL TIME STUDENT AND ARE VERY STRONG IN CODING AND MATHS.
+
+FOUNDATION - 2 OR 3 TERMS
+
+DIPLOMA - 4 TERMS
+
+BSC/BS IN 3 OR 4 TERMS
+
+PROGRAM COMPLETED IN 9 TERMS OR 3 YEARS
+
+DBMS
+
+BDM Theory
+
+BDM Project
+
+Java
+
+
+MAD1 Theory
+
+MAD1 Project
+
+BA
+
+SC
+
+
+PDSA
+
+MAD2 Theory
+
+MAD2 Project
+
+TDS
+
+
+MLF
+
+MLT
+
+MLP
+
+MLP Project
+
+
+16c
+
+14c
+
+12c
+
+12c
+
+
+Term1
+
+Term2
+
+Term3
+
+Term4
+
+
+DBMS
+
+BDM Theory
+
+MAD2 Theory
+
+MAD2 Project
+
+
+PDSA
+
+MAD1 Theory
+
+MAD1 Project
+
+TDS
+
+
+MLT
+
+MLP
+
+MLP Project
+
+Java
+
+
+MLF
+
+SC
+
+DL-Gen Ai Theory
+
+DL-Gen Ai Project
+
+
+16c
+
+15c
+
+12c
+
+11c
+
+
+Course
+
+Pre Requisite
+
+Co Requisite
+
+MLP
+
+MLT
+
+
+MLT
+
+
+MLF
+
+App Dev 1 Project
+
+
+APP Dev 1 Theory
+
+App Dev 2 Theory
+
+
+App Dev 1 - Project
+
+DL - Gen AI Theory
+
+
+MLP
+
+DL - Gen AI Project
+
+
+DL - Gen AI Theory
+
+TDS
+
+
+MLP
+
+
+Even with a relaxed pathway, you should complete in a maximum of 7 or 8 terms.
+
+
+The new rules for those entering Diploma Level from May 2024 onwards:
+
+Complete minimum of 3 courses and 1 project in every 3 terms, which means the
+The slowest you can go is 3 courses and 1 project in 3 terms (1 year), 6 courses and 2 projects in 6 terms (2 years), 9 courses and 3 projects in 9 terms (3 years) and 12 courses and 4 projects in 12 terms (4 years).
+At the end of 3 terms, if you do not complete 3 courses and 1 project you will be given warning.
+At the end of 6/9/12 terms if you do not complete 6/9/12 courses and 2/3/4 projects, you will be removed from the program.
+
+ If you wish to do the Diploma in programming and Diploma in data science one after the other and not mix up the courses, here are the suggested pathways.
+
+
+DOING A SINGLE DIPLOMA (DS)
+
+2 Terms
+
+Term 1
+
+Term 2
+
+Term 3
+
+Term 4
+
+NOT RECOMMENDED UNLESS YOU HAVE SOME BACKGROUND AND CAN HANDLE THIS LOAD
+
+MLF
+
+MLP
+
+
+MLT
+
+BA
+
+
+BDM
+
+TDS
+
+
+BDM project
+
+MLP proj
+
+
+MLF
+
+MLP
+
+
+MLT
+
+DL GenAI Theory
+
+
+BDM
+
+MLP project
+
+
+TDS
+
+DL GenAI project
+
+
+3 Terms
+
+Term 1
+
+Term 2
+
+Term 3
+
+Term 4
+
+MODERATE PATHWAY - CAN BE TAKEN IF YOU ARE COMFORTABLE WITH PYTHON AND MATHS
+
+BDM
+
+BA
+
+TDS
+
+
+BDM Project
+
+MLT
+
+MLP
+
+
+MLF
+
+
+MLP project
+
+
+MLF
+
+MLP
+
+MLP proj
+
+
+MLT
+
+DL GenAI Th
+
+DL GenAI Proj
+
+
+TDS
+
+BDM
+
+
+Term 1
+
+Term 2
+
+Term 3
+
+Term 4
+
+4 Terms
+
+MLF
+
+MLT
+
+MLP
+
+BA
+
+EXTREMELY COMFORTABLE AND RELAXED PATHWAY - RECOMMENDED IF PLANNING FOR ONLY ONE DIPLOMA EXIT OR DAD STUDENTS
+
+BDM
+
+BDM Project
+
+TDS
+
+MLP Project
+
+MLF
+
+MLP
+
+MLP Project
+
+TDS
+
+MLT
+
+BDM
+
+DL GenAI Th
+
+DL GenAI Proj
+
+
+     IMPORTANT
+
+
+OPPEs for all Diploma courses will be scheduled in the following way:
+If you have 2 courses with OPPEs, both will be scheduled on Sunday, December 20, 2026.
+If you have 3 courses with OPPEs, OPPEs for 2 courses will be scheduled on Sunday, December 20, 2026 and OPPE for 1 course will be scheduled on Sunday, January 3, 2027.
+If you have 4 courses with OPPEs, OPPEs for 2 courses will be scheduled on Sunday, December 20, 2026 and OPPE for the other 2 courses will be scheduled on Sunday, January 3, 2027
+
+In the cases of b and c above, if you fail in subjects of Sunday, December 20, 2026 and are rescheduled for Sunday, January 3, 2027, there will be no option to split the subjects any further or reschedule them. All will have to be written on the same day.
+
+
+Only if you have a conflicting engagement on Sunday, December 20, 2026, which cannot be changed or moved and you submit a request to us with proof, we will check the proofs and if found valid, we will make changes to the above allocation. Since both Sunday, December 20, 2026 and Sunday, January 3, 2027 are Sundays, please ensure you keep it free, especially as per the time slots given here for giving the exams.
+
+
+Nov 1st week (Tentative): We will release the slots for OPPE 1 & Dates for OPPE 2 allocated for each student for their registered subjects . If eligibility is specified as part of the grading document to attend the exam and if you are eligible, the exam will be scheduled as per the slots allocated.
+
+Please choose courses for the Sep 2026 term keeping all these points in mind.
+
+
+Diploma level courses
+1. Machine Learning Foundations (DS Diploma)  (CS2004)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026        End term:  January 10 2027
+
+Above to be attended in person at designated centers.
+
+
+Eligibility to attend final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 and attending at least one of the 2 quizzes in the center.
+
+
+Eligibility to get the final course grade: Attending the end sem exam
+
+
+Bonus
+
+We will ask one or more hard questions in each of the quizzes and the end-term. These will show up as zero-mark questions in the actual exam. Students who correctly answer this will be awarded bonus marks out of the T-score.
+All bonus questions together count towards a maximum of 5 marks in the T-score.
+The exact number of bonus questions and its contribution to the T-score will be left to the discretion of the instructors.
+
+The calculation of Final course score is proposed as follows:
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        Overall score for eligible students:
+
+        T = max (0.6F + 0.3max(Qz1, Qz2), 0.45F + 0.25Qz1 + 0.3Qz2)+BONUS
+
+
+2. Machine Learning Techniques (Diploma in DS)  (CS2007)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to attend the end term exam: Average of the best 5 out of the first 7 weekly assessments (objective) scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+
+Eligibility to get the course grade: Attending the end sem exam
+
+
+            GAA =  Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.05 GAA + max (0.6F + 0.25max(Qz1, Qz2), 0.4F + 0.25Qz1 + 0.3Qz2)
+
+(Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+Bonus of 3 marks awarded for the Programming Assignment Submission IF average of ALL assignments >= 40.
+
+
+3. Machine Learning Practice (Diploma in DS)  (CS2008)
+Quiz 1: No Quiz 1                 Quiz 2: No Quiz 2                         End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to attend the end term exam: Average of the best 5 out of the 7 weekly assessments (objective and programming) scores >= 40/100
+
+
+ Eligibility to get the course grade: Attending the end sem exam AND one programming exam with score in programming exam >= 40/100
+
+
+Eligibility to appear for the OPPE 1:
+
+Student has to complete the OPPE System Compatibility Test (SCT) exam
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document
+
+OPPE1 will not be scheduled for students who fail to complete the OPPE SCT exam.
+
+
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+Online programming exam 1: – (OPPE1)   Sunday, November  22, 2026
+
+Online programming exam 2: – (OPPE2)   Sunday, December 20, 2026
+
+
+KA
+
+Release Date
+
+Deadline
+
+Peer Review Deadline
+
+KA 1
+
+Nov 2nd
+
+Nov 11th
+
+Nov 13th
+
+KA 2
+
+Nov 17th
+
+Nov 25th
+
+Nov 27th
+
+KA 3
+
+Dec 6th
+
+Dec 14th
+
+Dec 16th
+
+
+GAA = Average score in First 10 weekly graded assignments
+
+OPPE1 - Score in online remote proctored programming exam
+
+OPPE2 - Score in online remote proctored programming exam
+
+KA -         Average score in 3 Kaggle Assignments
+
+F = score in final exam
+
+Total course score T = 0.05 GAA + 0.40 F + 0.20 OPPE1 + 0.20 OPPE2 + 0.15 KA
+
+
+OPE1/OPE2
+
+ET
+
+T
+
+Grade
+
+Next steps
+
+1.
+
+Absent/In eligible
+
+Absent/In eligible
+
+ -
+
+U
+
+Repeat the entire course
+
+2.
+
+Absent (OPE1 and OPE2=0)
+
+Present
+
+>=35
+
+I_OP
+
+Complete OPE alone in next term, Both OPPEs will be scheduled.
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+score< 40/100
+
+Present
+
+>=40
+
+I_OP
+
+Redo OPE alone next term. Both OPPE will be scheduled,
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_BOTH
+
+Redo End term exam and OPE alone in next term. Both OPPE will be scheduled for you. GA, quiz will be carried over
+
+OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > =40/100
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term, OPPE will NOT be scheduled;
+
+GA, quiz and OPPE marks will be carried over
+
+OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Grade as per the Total score T
+
+
+4. Business Data management (DS Diploma)  (MS2001)
+
+
+Quiz 1: November  15 2026            Quiz 2: December 5 2026    End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to attend final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 and attending at least one of the 2 quizzes in the center
+
+Eligibility to get the final course grade: Attending the end sem exam
+
+
+The calculation of Final course score is proposed as follows:
+
+        GAA = Average score in First 9 weekly graded assignments
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+        Overall score for eligible students:
+
+        T = 0.05 GAA + max (0.6F + 0.25max(Qz1, Qz2), 0.4F + 0.25Qz1 + 0.3Qz2)
+
+
+5. Business Analytics (Diploma in DS)  (MS2002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+There will be no regular weekly graded assignments being designed for this course. Instead there are 3 course assignments.
+
+
+Eligibility to take the final exam:
+
+You should have submitted at least 1 of the 3 assignments AND attended one of the two quizzes.
+
+
+Eligibility to get final course grade: Attending the end term exam AND End term exam score F >=10/40
+
+So you have to score >=10/40 in the Final exam score AND get Total score >= 40/100. If either
+
+ one condition is not satisfied, then you will not get a pass grade in the course and but you will get U grade.
+
+
+40 marks: In center quiz - 20 marks (Qz)
+
+Quiz 1 for 20 marks and syllabus will be from Week 1-4 (Qz1)
+
+Quiz 2 for 20 marks and syllabus will be from Week 3-8 (Qz2)
+
+Qz = 2*(0.7*Max(Qz1, Qz2) + 0.3*Min(Qz1, Qz2))
+
+
+20 Marks: 3 Assignments for a total of 20 marks :
+
+Assignment 1: 10 marks
+
+Assignment 2: 10 marks
+
+Assignment 3: 10 marks
+
+A = Sum of the Best 2 out of (Assignment 1, Assignment 2, Assignment 3)
+
+
+40 Marks (F): End Term Exam
+
+Will be set to 45 marks and students can attempt all.
+Marks obtained will be capped at 40.
+The syllabus for the End term exam will be the contents covered in Weeks 1 to 12
+
+Final course score T = Qz + A + F
+
+Business Analytics (BA) Assignment Deadlines
+Week no.
+
+Release date
+
+Submission date
+
+5
+
+Friday, October 30, 2026
+
+Wednesday, November 11, 2026
+
+6
+
+Friday, November 6, 2026
+
+Wednesday, November 18, 2026
+
+9
+
+Friday, November 27, 2026
+
+Sunday, December 6, 2026
+
+
+6. Tools in Data Science (Diploma in DS) (SE2002)
+[Co-requisite for this course is MLP]
+No in-centre quizzes for this course.
+
+End term exam: January 10 2027 - to be attended in person at designated centres.
+
+ROE: Sun, Sunday November 29, 2026
+
+
+Academic policies
+
+1. The Tools in Data Science portal (https://tds.s-anand.net/) has all the course content: Graded Assignments, Projects and ROE links. The Seek Portal is not used for submissions.
+
+2. You may use Large Language Models (LLMs). You may collaborate on assignments. Practice giving credit to LLMs and collaborators. Practice learning, not blind copying.
+
+3. Assessments will include LLMs-as-judges. LLM evaluations are final. No appeal.
+
+4. We may post bonus activities on Discourse, email, the SEEK Portal, and TDS portal for updates. Bonus marks are awarded at the course team's discretion.
+
+
+Before registering for TDS, please attempt the Entrance Exam at https://exam.sanand.workers.dev/tds-2026-09-ga0
+
+. It checks course pre-requisites. Please drop this course (do it in a later term) if you score low. It'll be too tough for you now.
+
+
+End term eligibility: Average Score in the best 2 of the first 4 GAs to attend the end-term should be >=40
+
+Eligibility to get the course grade: Attending end-term exam
+
+
+Assessment
+
+Open date (Tentative)
+
+Submission date (Tentative)
+
+ROE
+
+Remote Online Exam (45 mins, open internet, Objective assessments)
+
+Sunday November 29, 2026
+
+Sunday November 29, 2026
+
+P1
+
+Take home project 1 (open internet)
+
+Friday, October 9, 2026
+
+Monday, November 9, 2026
+
+P2
+
+Take home project 2 (open internet)
+
+Friday, November 6, 2026
+
+Sunday, December 13, 2026
+
+
+GAA = Average of the score in best 7 of 9 weekly assignments on the portal (open internet, MCQs)
+
+F = Final end term exam (no internet, in-person, mandatory).
+
+Final course score T = 0.2 GAA + 0.2 ROE + 0.2 P1 + 0.2 P2 + 0.2 F
+
+
+7. Programming Data structures and algorithms using Python (PDSA) - Diploma in Programming  (CS2002)
+Weekly assignments: Mix of autograded assignment and Programming assignments
+
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+1 programming exam of 120 minutes duration - Online remote proctored - (20th Dec or Jan 3rd will be allocated prior) (If you are absent for the OPPE, then Repeat OPPE will NOT be provided in the next term as this does not impact passing the course, only total course  score)
+
+
+A2: Average of GrPA scores in week 2
+
+A3: Average of GrPA scores in week 3
+
+A4: Average of GrPA scores in week 4
+
+A5: Average of GrPA scores in week 5
+
+A6: Average of GrPA scores in week 6
+
+A7: Average of GrPA scores in week 7
+
+A8: Average of GrPA scores in week 8
+
+
+Eligible to write OPPE:
+
+Student has to complete the OPPE System Compatibility Test (SCT) mandatorily
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document AND
+
+A2>=40/100 AND A3>=40/100 AND A4>=40/100 AND A5>=40/100 AND A6>=40/100 AND A7>=40/100 AND  A8>=40/100
+
+
+Eligibility for attending end sem exams: Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100 AND attending at least one of the 2 quizzes in the centre
+
+
+ Eligibility to get the final course grade: Attendance in the End sem exam
+
+
+The calculation of Final course Score is proposed as follows:
+
+GAA =Average score in First 10 weekly graded assignments (Till week 11 as Week 10 is break)
+
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+            OP = Score in Online proctored remote exam
+
+        F = score in final exam
+
+T = 0.05GAA + 0.2OP + 0.45F + max (0.2max(Qz1, Qz2), (0.10Qz1+0.20Qz2 ))
+
+8. Database management system (DBMS) - Diploma in Programming  (CS2001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write end term exam: Average of the best 5 out of the first 7 weekly assessments scores >= 40/100 AND attending at least one of the 2 quizzes in the centre
+
+
+Eligibility to get final course grade:
+
+Attending the End sem exam AND scoring a minimum of 35% in the OPE (overall) AND Getting the question based on Python-DB connectivity correct is mandatory to get the course grade.
+
+(The OPPE will be based on SQL query(Week 2-3) and Python-Database connectivity(Week 7).)
+
+If you don't get the 35% in OPPE OR don't pass the Python-DB connectivity question, you will be given a fail in the OPPE.)
+
+
+OPPE:
+
+Student has to complete the OPPE System Compatibility Test (SCT) exam
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document
+
+
+There is only one OPPE conducted for the course. But there are 2 chances to attempt it.
+
+ Students have to mandatorily attend the OPPE on the first date. If you fail in this, you get a chance to reappear the next weekend. So you get 2 chances to attempt the exam.
+If you are absent on the first date, you do not get the reattempt chance.
+If the first date is inconvenient due to a clash with some other engagement, then you can apply for a postponement to the second date providing sufficient proof. If this is accepted, your exam will be moved to the second date but if you fail in this or are absent, you will not get another chance to reattempt. You will have to do it in the subsequent term.
+
+The calculation of Final course Score is proposed as follows:
+
+        GAA2= Average score of week 2 and 3 SQL based assignments
+
+        GAA3= Average score of week 7 programming assignment
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+            OPPE - Score in online remote proctored programming exam
+
+        F = score in final exam
+
+T = 0.03GAA2 + 0.02GAA3 + 0.2 OPPE + 0.45F + max (0.2max(Qz1, Qz2), (0.10Qz1+0.20Qz2 ))
+
+
+Assessment Type
+
+Method
+
+Proctoring
+
+% of Total Score T
+
+Week 1-12
+
+100% objective
+
+NA
+
+None
+
+Weekly assessments, Weeks 2,3
+
+PostgreSQL assignments will be considered.
+
+None
+
+GAA2
+
+Week 7
+
+Programming assignment
+
+NA
+
+GAA3
+
+Quiz 1 : Weeks 1-4  November 15,  2026
+
+Objective
+
+In person at TCS centres
+
+Qz1
+
+
+Qz2
+
+Quiz 2 Weeks 1-8 December 5, 2026
+
+Objective
+
+In person at TCS centres
+
+Online remote proctored exam (OPE)
+
+20th Dec 2026 - first attempt
+
+3rd Jan 2027 - Reattempt for those who failed on
+
+Testing will be on SQL queries and python-database connections - Students will be given the option to choose the date and slot. Based on logistics the slots will be allocated.
+
+Online remote proctored
+
+OPE
+
+End Sem January 10, 2027
+
+100% Objective
+
+In-person at TCS centres
+
+F
+
+
+OPE
+
+ET
+
+T
+
+Grade
+
+
+1.
+
+Absent/In eligible
+
+Absent/In eligible
+
+ -
+
+U
+
+Repeat the course.
+
+2.
+
+Absent
+
+Present
+
+>=35
+
+I_OP
+
+Complete OPE alone in next term (only one oppe in this course)
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+
+score< 35/100
+
+
+OR
+
+
+Python-DB question Incorrect.
+
+Present
+
+>=40
+
+I_OP
+
+Complete OPE alone in next term (only one oppe in this course)
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_BOTH
+
+Complete ET exam and OPE in next term, (only one oppe in this course)
+
+GA and quiz marks will be carried over
+
+OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > = 35/100
+
+
+AND
+
+
+Python-DB question correct.
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term;
+
+GA, quiz and OPPE marks will be carried over OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Actual grade
+
+Grade as per the Total score T
+
+
+9. Application development - 1 (Diploma in programming)  (CS2003)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write end term exam: Average of the best 5 out of the first 7 weekly assessments (objective) scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+
+Eligibility to get final course grade: Attending the End sem exam
+
+
+Assessment Type
+
+Method
+
+Proctoring
+
+Contribution to final score
+
+Lab assignments, Weeks 2 - 7
+
+100% Lab assignments auto evaluated via framework (weekly assignments)
+
+None
+
+GLA : 70% of Best 2 out of first 5 [2, 3, 4, 5, 6], 30% of week7
+
+Objective Assignments, Weeks 1 - 12
+
+100% objective
+
+None
+
+None
+
+Quiz 1: Sunday, November 15th, 2026 & Quiz 2:Saturday, December 5th, 2026
+
+Objective
+
+In person at TCS centers
+
+Qz1, Qz2
+
+End Sem, Sunday, Jan 10th, 2027
+
+Objective
+
+In person at TCS centers
+
+F
+
+
+Final course score T = 0.05 GLA + max (0.6F + 0.25max(Qz1, Qz2), 0.4F + 0.25Qz1 + 0.3Qz2)
+
+10. Programming concepts using Java (Diploma in programming)  (CS2005)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+A2: Average of GrPA scores in week 2
+
+A3: Average of GrPA scores in week 3
+
+A4: Average of GrPA scores in week 4
+
+A5: Average of GrPA scores in week 5
+
+A6: Average of GrPA scores in week 6
+
+A7: Average of GrPA scores in week 7
+
+A8: Average of GrPA scores in week 8
+
+
+Eligibility to appear for the OPPE 1:
+
+Student has to complete the OPPE System Compatibility Test (SCT) exam
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document
+
+AND
+
+A2>=40/100 AND A3>=40/100 AND A4>=40/100
+
+OPPE1 will not be scheduled for students who fail to complete the OPPE SCT exam and not fulfill the criteria.
+
+
+Eligibility to appear for the OPPE 2:
+
+Student has to complete the OPPE System Compatibility Test (SCT) exam
+
+SoP for the SCT Exam is as follows: Click Here for OPPE SCT SoP Document
+
+AND
+
+A5>=40/100 AND A6>=40/100 AND A7>=40/100 AND A8>=40/100
+
+AND
+
+Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100 (becoming eligible to give the end term exam)
+
+
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+Eligibility to attend the end term exam: Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100 and attending at least one of the 2 quizzes in the center.
+
+
+Eligibility to get the course grade: Attending the end term exam AND one programming exam with a minimum score of 30%.
+
+Assessment Type
+
+Components
+
+Mode
+
+Code
+
+Weeks 1 - 12
+Weekly Objective Assessments
+
+Objective Questions
+
+On Course Portal
+
+
+Weeks 2 - 8
+
+Weekly Programming Assignments
+
+Programming Questions
+
+On Course Portal
+
+GAA
+
+Quiz 1 -  November 15 2026 ; Weeks 1-4
+
+Objective + subjective
+
+
+In TCS centers
+
+Qz1
+
+
+Qz2
+
+Quiz 2 -  December 5 2026; Weeks 1-8
+
+Online Proctored Examination 1
+
+November 22nd (syllabus weeks 2-6)
+
+Programming Questions
+
+
+On Course Portal
+
+PE1
+
+
+PE2
+
+Online Proctored Examination 2 -
+
+20th Dec & Jan 3rd (syllabus weeks 2-9)
+
+End Sem - January 10 2027
+
+Weeks 1-12
+
+Objective
+
+In TCS centers
+
+F
+
+
+GAA = average of score in Best 6 out of 7 weeks programming graded assignments given
+
+
+T = 0.05GAA + 0.2 of Max(PE1,PE2) + 0.45F + max (0.2max(Qz1, Qz2), (0.10Qz1+0.20Qz2 )) + (Bonus) 0.10 of Min(PE1,PE2)
+
+
+OPE1/OPE2
+
+ET
+
+T
+
+Grade
+
+
+1.
+
+Absent/In eligible
+
+Absent/In eligible
+
+ -
+
+U
+
+
+2.
+
+Absent (PE1 and PE2=0)
+
+Present
+
+>=35
+
+I_OP
+
+Complete OPE alone in next term,
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+score< 30/100
+
+Present
+
+>=40
+
+I_OP
+
+Redo OPE alone in next term,
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_BOTH
+
+Redo End term exam and OPE alone in next term.
+
+GA, quiz will be carried over. OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > =30/100
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term;
+
+OPPE will NOT be scheduled.
+
+GA, quiz and OPPE marks will be carried over OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Grade as per the Total score T
+
+
+11. System commands (Diploma in programming)  (SE2001)
+Quiz 1: November  15 2026                    Quiz 2: No Quiz        End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+OPPE: December 20th 2026                              ReOPPE: 3rd January 2027
+
+Biweekly Programming Test (BPT) Release Dates week 3, week 5, week 7, week 10
+
+
+The deadline for the BPT assignment will be set one week after its release.
+
+BPT Release dates:
+
+BPT 1 - 16 Oct 2026
+
+BPT 2 - 30 Oct 2026
+
+BPT 3 - 13 Nov 2026
+
+BPT 4 - 04 Dec 2026
+
+The deadline for each BPT will be 7 days after the release date.
+
+Will be conducted in the course VM - Each BPT has 4 Questions
+
+
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+Eligibility for OPPE: The average of the first three BPT >=40/100
+
+https://docs.google.com/document/d/e/2PACX-1vS4Hhh4MsKD2WL8_D26Vw2WJKw0CBtPihZyKrnEM_kefRXm_O75GqTcJA6lR0X_xCiVL5gUi5y6_bjw/pub
+
+SCT for OPPE and exam day rules:
+
+
+Eligibility to attend the end term exam:
+
+Average of the best 5 out of the first 7 weekly assessments (objective and programming) scores >= 40/100 AND OPPE should be eligible
+
+
+Eligibility to get the course grade:
+
+Attending the end semester exam AND programming exam (OPPE) score >= 40/100
+
+
+There will be ONE OPPE based on weeks 1-9.
+
+Students have to mandatorily attend the OPPE on the first date.
+
+ If you fail in this, you get a chance to reappear the next weekend. So you get 2 chances to attempt the exam.
+If the first date is inconvenient due to a clash with some other engagement, then you can apply for a postponement to the second date providing sufficient proof. If this is accepted, your exam will be moved to the second date but if you fail/absent in this, you will not get another chance to reattempt. You will have to do it in the subsequent term.
+If you are absent on 20th Dec, you DON'T get another chance on Jan 3rd..
+Re OPPE Eligibility:
+
+• Students must score a minimum of 20 marks in the SC OPPE to be eligible for the ReOPPE.
+• Students must remain present in the proctoring G Meet for a minimum of 1 hour 30 minutes.
+
+NPPE [Syllabus Weeks 1-9]: (This will give you practice to handle the OPPE, but not part of final course grade)
+
+GAA =  Average of score in Best 9 out of the 10 weekly graded assignments
+
+BPTA: Average of the 4 BPT scores
+
+QZ1 = score in Quiz I (0, if not attempted)
+
+OPPE = Score in online remote proctored programming exam
+
+F = score in End Term exam
+
+Final course score T = 0.05 GAA + 0.25 Qz1 + 0.3 OPPE + 0.3F + 0.1 BPTA
+
+
+OPE
+
+ET
+
+T
+
+Grade
+
+
+1.
+
+Absent/In Eligible
+
+Absent/In Eligible
+
+ -
+
+U
+
+Repeat entire course
+
+2.
+
+Absent (OPE=0)
+
+Present
+
+>=35
+
+I_OP
+
+Complete the BPT and OPE in next term; BPTs will be eligibility to write OPPE
+
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+score< 40/100
+
+Present
+
+>=40
+
+I_OP
+
+Complete the BPT and OPE in next term; BPTs will be eligibility to write OPPE
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_Both
+
+Redo End term exam and OPE in next term; For doing the OPE, BPTs have to be done and students have to become eligible
+
+
+GA, quiz will be carried over OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > = 40/100
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term;
+
+OPPE will NOT be given in this case.
+
+GA, quiz and OPPE marks will be carried over OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Grade as per the Total score T
+
+
+12. Application Development - 2 (Diploma in programming)  (CS2006)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam:  Average of the best 5 out of the first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+
+Eligibility to get final course grade: Attending the End sem exam
+
+
+Assessment Type
+
+Method
+
+Proctoring
+
+Percentage contribution
+
+Weekly assessments
+
+Weeks 1 - 11
+
+100% objective
+
+
+None
+
+None
+
+Programming Assignments
+
+Weeks 1 and 2
+
+Auto Evaluated
+
+None
+
+GAA = 5 marks
+
+Quiz 1 - November 15 2026 , Qz1
+
+Quiz 2 - December 5 2026, Qz2
+
+Objective
+
+
+In person at TCS centers
+
+Qz1, Qz2
+
+
+End Sem - January 10 2027, F
+
+100% Objective
+
+In person at TCS centers
+
+F
+
+
+GAA - Average of weeks 1 and 2 programming assignments
+
+
+Final course score T = 0.05 GAA + max (0.6F + 0.25max(Qz1, Qz2), 0.4F + 0.25Qz1 + 0.3Qz2)
+
+13.Introduction to Deep Learning and Generative AI  (DA2001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres
+
+
+Eligibility to write End term exam:  Average of the first 5 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+
+Eligibility to get the final course grade: Attending the end sem exam
+
+
+The calculation of Final course score is proposed as follows:
+
+GAA = Average score in First 9 weekly graded assignments
+
+        Qz1 = score in Quiz I (0, if not attempted)
+
+        Qz2 = score in Quiz II (0, if not attempted)
+
+        F = score in final exam
+
+
+NPPE=Non-proctored programming assignment (NPPE1 21st Nov to 24th Nov
+
+NPPE2 11th Dec to 14th Dec )
+
+
+        Overall score for eligible students:
+
+
+Final course score T = 0.1 GAA + 0.2 Qz1 + 0.2 Qz2 + 0.25 F + 0.1 NPPE1 + 0.15 NPPE2
+
+
+Project Courses:
+
+Project courses are now for 2 credits each - BDM, MLP, App Dev 1, App Dev 2, Dl-GenAi project.
+
+The Project courses are not part of CCC. The CCC is only for theory courses.
+
+
+App Dev1 Theory is a co-requisite for App Dev 1 project.
+
+App Dev1 project is a corequisite for App Dev2 Theory.
+
+App Dev2 Theory is a corequisite for App Dev2 Project.
+
+MLP course is a co-requisite for MLP project.
+
+BDM course is a co-requisite for BDM project.
+
+DL-GenAI Theory is a co-requisite for DL-GenAI Project
+
+
+FOR MLP: There will be fortnightly assessments configured in the MLP project course alone that you have to submit. We will be using this information to cross check your engagement in the course.
+
+
+Submission deadline :
+
+MLP : Yet to be updated
+
+
+FOR, MAD1, MAD2 PROJECTS:
+
+Theory completed term ( Received a pass grade)
+
+Submission date
+
+Evaluation
+
+May 2026 or previous term
+
+
+November 17th, 2026
+
+100
+
+Sep 2026
+
+
+December 10th, 2026
+
+105 marks and cap it to 100
+
+
+BDM project will be evaluated only out of 100 marks for all students, irrespective of the term submitted in.
+
+
+Each project has its own modalities and processes to be followed.
+
+Please check your course announcements for the project timelines and make the submissions accordingly.
+
+Guideline documents:
+MLP Project
+
+https://bsc-iitm.github.io/mlp-project/guidelines.html
+
+
+Appdev Bootcamp plan : Click here
+
+MAD I Project
+
+Project Document:
+
+
+https://docs.google.com/document/d/e/2PACX-1vQerQ3YjgvTyIN1vSJMPlzX-FHf0Qes5dYSDOu42KynFsR8ydbsZE64Xf8Goxow31iEm7PkJlc6fYZr/pub
+
+Project statement -Examination Management Application V1:
+
+https://docs.google.com/document/d/e/2PACX-1vSs7CvyTQApsP5UlW_HHeBbT5Bj8x9WAFZG0MbIsfa3Oj6jdQ-36ooSvS5foxE-Ih1HcAVzpPLMmpxd/pub
+
+
+MAD II Project
+
+
+Project Document:
+
+
+https://docs.google.com/document/d/e/2PACX-1vRw1JDBs3VILIL4583W26nz-8tFVBbGXrkFD_tK3ZQ01Q9FykldrfPeDROcnHfbbmcWp3fWwyDdwOkv/pub
+
+
+Project statement 1 - Examination Management Application V2
+
+https://docs.google.com/document/d/e/2PACX-1vRS-AUGWCZOMZ5RCdBVi682YIbMXjhKazVgkJowTgIilmKuIl185qu2_K6dq2HozN_gBdc01nzp_KXI/pub
+
+
+Project statement 2 - Trekking Management Application V2:
+
+https://docs.google.com/document/d/e/2PACX-1vSabfvSRC1BvxC5eNhzzj6PqBg1ATKq9nH_s_fVwOrG84-JNETkFkwienTgnmoAMSZZT9zsHdNwis4Y/pub
+
+
+BDM Project:  BDM PROJECT SUBMISSION TIMELINE
+
+Deep learning and Generative AI Project : https://docs.google.com/document/d/e/2PACX-1vTKpl6r7wFD3S2g99wcqoSfFmPd2rmlI3RZdgszlpKSsv-KRFbfJVcFrDrl71J_ffaZ65FFgGTKFf6x/pub
+
+
+Rules regarding project fees:
+
+The fee paid for each of the 4 projects is valid for 2 terms. Please read this carefully so that you register properly.
+
+Category
+
+Payment
+
+Category Waiver
+
+Grade
+
+New Registration
+
+2500
+
+Yes
+
+Actual grade
+
+If the project is not completed in the registered term - the fee is retained for the subsequent term, grade will be marked as I.
+
+
+. If the project is not completed in the second term also, then the registration becomes invalid and the student has to pay the full fees again, you will get a U grade.
+
+2500
+
+Yes
+
+I or U
+
+If the student fails in the project,
+
+Students have to redo the project by registering to the project by paying the full fees
+
+2500
+
+Yes
+
+U
+
+If the student fails in the project or the submission is found to be Plagiarized,
+
+Student will be subjected to disciplinary action
+Student has to redo the project by registering to the project by paying the full fees.
+2500
+
+Yes
+
+U
+
+Timelines (Appdev1, Appdev2 & MLP, BDM projects):
+Here are the timelines for students doing projects in the SEP 2026  terms who will be entering Degree level in the Jan 2027 term. Without completing the 12 courses and 4 projects, you cannot start degree level courses from Jan 2027 onwards.
+
+For entering the Degree level in JAN 2027, you have  to complete ALL projects and vivas by Dec 2026.
+
+
+BDM project final submission has to be done and approved by Oct/Nov/Dec 2026 so that viva can be over in   Oct/Nov/Dec 2026. Project grade for all the courses will be pushed on/before  Jan 15th.
+
+Students are requested to complete the projects at least two terms before their diploma completion term i.e DO NOT REGISTER OR HAVE PROJECTS ALONE LEFT IN YOUR LAST TERM OF DIPLOMA.
+
+
+Very important:
+
+Viva policy for MLP, DL&GEN AI, Viva Policy for Appdev
+Students who completed App dev1, App dev2, MLP and BDM in Sep 2021/Jan 2022 terms:
+
+If you complete the 6 courses and 2 projects of any of the two Diplomas, you will get the Diploma certificates. But your credits will not be 27 for this Diploma but 23 or 25 depending on how many of these courses were completed in these 2 terms. The projects done as part of the courses of Sep 2021/Jan 2022 will not get the 2 credits. So there is no issue with the Diploma level.
+
+When you come to the BSc level, 114 credits are required to obtain the BSc certificate. Hence this deficit of 2/4/6/8 credits will have to be made up by taking more elective courses offered by the IITM BS program.
+
+Degree Level courses
+Level of the course:
+
+The first digit of the 4 digits given in the course code represents the level of the course.
+
+Eg: CT is CS1001 is a 1 level course.
+
+Deep Learning CS3004 is a 3 level course.
+
+Industry 4.0 MS4001 is a 4 level course.
+
+
+BSc level:
+
+It is now mandatory that students have to complete both the core pairs and SPG in the BSc level. Credits = 20
+
+All remaining 8 credits can be earned from IITM BS courses or NPTEL (maximum upto 4 credits from Table 2) or if there is an option to credit campus courses (IITM or other institutes), that too can be done.
+
+
+BS level:
+
+It is implemented wef Sep 2023 for the batch that enters the degree level in Sep 2023.
+
+
+2 courses in the level 4 or higher should be mandatorily completed in each of the BP and BD categories. Please refer course category in table1
+
+Out of the remaining 12 credits, it is MANDATORY to earn 4 credits in the HS/MG category. HS/MG can come from inhouse electives or from NPTEL-Table 3.
+
+Remaining credits are from any of the other in-house/campus electives or Apprenticeship electives.
+
+
+Apprenticeship:
+
+Apprenticeship is completely optional. Students can also complete the BS level by just doing only course work.
+
+SWAYAM NPTEL Approved Dep/Free Elective course list:
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSJXV0JECyoQvgWvBlVxO13G0KRm5a1qNCRBa7rAw8GDY4e0cfm1KiVCwIgs_ed80ObtzQ1rfx_JWIR/pubhtml?gid=399341609&single=true
+
+SWAYAM NPTEL Approved HS/MG course list:
+
+https://docs.google.com/spreadsheets/d/e/2PACX-1vSJXV0JECyoQvgWvBlVxO13G0KRm5a1qNCRBa7rAw8GDY4e0cfm1KiVCwIgs_ed80ObtzQ1rfx_JWIR/pubhtml?gid=1418834182&single=true
+
+We are also collaborating with the Microsoft and AWS certification program team to offer their courses for our students at discounted rates. It would be good to complete some cloud certifications from this too when we offer it. There are no credits for this.
+
+It is important you learn more on programming and data science outside of what the curriculum offers and strengthen your resume.
+
+
+Academic policies
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+1. Software Testing   (CS3002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F - score in End Term exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+2. Software Engineering  (CS3001)
+Quiz 1: No Quiz                Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write end term exam:
+
+Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND submission of Group project Milestone [1-2]
+
+
+Eligibility to get final course grade: Attending the End term exam AND Submission of group project (All milestones)  is mandatory for course grade AND score in group project > 0
+
+
+Overall score for eligible students:
+
+GAA = Average score in total 10 weekly graded assignments
+
+Qz1 = NOT THERE IN THIS COURSE
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+Group Project- Milestone 1-2 (After week 6) - GP1
+
+Group project - Milestone 3-5 (After week 12) - GP2
+
+Project Presentation - PP
+
+Course participation activity - CP
+
+F - score in End Term exam
+
+T = 0.05GAA + 0.2Qz2 + 0.4F+ 0.1GP1 + 0.1GP2 + 0.1PP + 0.05CP
+
+(More details about the Group project will be given in the course).
+
+
+Release date
+
+Submission date
+
+Peer review
+
+closing date
+
+Score release
+
+Milestone 1
+
+October 2
+
+
+October 25
+
+
+November 10
+
+
+November 20
+
+
+Milestone 2
+
+October 2
+
+
+November 1
+
+
+Milestone 3(Sprint 1)
+
+October 2
+
+
+November 22
+
+December 25
+
+
+January 8
+
+
+Milestone 4(Sprint 2)
+
+October 2
+
+December 6
+
+Milestone 5
+
+October 2
+
+
+December 20
+
+
+3. Deep Learning (CS3004)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Bonus Marks:
+
+The average score of all (3) programming activity assignments will be used as Bonus marks.
+
+Maximum bonus marks will be 5. - weeks 4, 9,11
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F - score in End Term exam
+
+T = 0.05GAA + 0.25Qz1 + 0.25Qz2 + 0.45F
+
+4. AI: Search Methods for Problem Solving (CS3003)
+Academic policies
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F - score in End Term exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2 + bonus (as given below, if you pass the course)
+
+
+Bonus marks for those who pass the course: 5 (based on programming assignment)
+
+Programming Assignment 1 will be released between Quiz 1 and Quiz 2. The dates will be announced in the forum. This assignment will be evaluated offline.
+
+5. Strategies for Professional Growth (GN3001)
+Academic policies
+
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+
+Quiz 1: NO Quiz              Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write the final exam: Average of best 5 of the first 7 weeks' graded assignments >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end-term exam
+
+The calculation of the final course score for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+
+GP = Score in Group Project (0, if not participated)
+
+Qz2 = Score in Quiz II (Subjective & Objective). Score is 0 if not attempted.
+
+F = Score in final exam, based on weeks 1-12 (Subjective & Objective)
+
+T = Total score (out of 100)
+
+T =  0.10*GAA + 0.25*GP + 0.30*Qz2 + 0.35*F
+
+
+Project:
+
+Milestone
+
+Timeline
+
+Submission Date
+
+Marks
+
+Evaluation and Score Release
+
+I
+
+Week 1 to Week 3
+
+End of Week 3
+
+50 marks
+
+Before End term
+
+II
+
+Week 4 to Week 6
+
+End of Week 6
+
+50 marks
+
+
+More details about the Group Project will be given in the course.
+
+Bonus marks for additional activities may be awarded at the discretion of faculty or instructor, provided the student passes the course.
+
+
+6. Programming in C (CS3005)
+Quiz 1: November  15 2026                            Quiz 2: No Quiz 2                End term:  January 10 2027
+
+Above to be attended in person at designated centres
+
+For OPPE1, OPPE2 exam dates
+
+OPPE 1 - Sunday, November 22 , 2026
+
+OPPE 2 - December 20, 2026
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignments (objective and programming) scores >= 40/100
+
+Eligibility to obtain the final course grade: Both the conditions below should be satisfied.
+
+Attending the end term exam AND
+Score in one of the two programming exams (OPPE1, OPPE2) should be >= 40/100 - Minimum score to be obtained in one of the programming quizzes
+Repeat_OPPE Criteria
+(w.e.f from Jan 2026 term) [updated on Jan 05, 2026]
+
+Students who were OPPE eligible and received an I_OP in the May 2026 term, and have registered as Repeat OPPE for the Sep 2026 term, will continue to be considered eligible for OPPE in Sep 2026. However, students who were marked OPPE Ineligible with I_OP or I_Both and have registered for the respective course as Repeat OPPE or Repeat OPPE & End Term must regain OPPE eligibility in the Sep 2026 term by submitting the required assignments and OPPE SCT. If OPPE eligibility is not attained, the OPPE will not be scheduled and a U grade will be awarded for the Sep 2026 term.
+
+
+Final course score calculation:
+
+GAA =  Average score in First 10 weekly graded assignments(GA+GrPAs)
+Qz1 = score in Quiz 1 (0, if not attempted) - in centre
+OPPE1 = score in OPPE 1 (0, if not attempted) - programming exam 1
+OPPE2 = score in OPPE 2 (0, if not attempted) - programming exam 2
+F = score in final End Term exam
+T = 0.10GAA (GA+GrPAs) + 0.20Qz1 + 0.20 OPPE1 + 0.20 OPPE2 + 0.30F
+
+7. Deep Learning for CV (DA5006)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write end term exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+Bonus = Optional project: Max 5 bonus marks will be awarded for successful completion of project. The project will be graded based on literature review, benchmarking, novelty, and results.
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2+Bonus (Tentative)
+
+Project components will be released in the portal which will not be part of the scores. That will be considered for the special certification.
+
+8. Large Language Models (DA5004)
+Academic policies
+
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score of all 7 assignments till week 9
+
+Bonus - Total 5 marks - Average score of  programming assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F - score in End Term exam
+
+T = 0.05GAA + 0.35F + 0.3Qz1 + 0.3Qz2 + Bonus (5 marks ,if passed)
+
+
+9. Deep Learning Practice (DA5013)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to get final course grade: Viva score >=40%
+
+
+Quiz1 - based on content taught by Prof Mitesh (Based on weeks 1-4)
+
+Non-proctored programming assignment 1 - NPPE1 (Configured in the portal in week 4)
+
+
+Quiz2 - based on content taught by Prof Umesh (Based on weeks 5-8)
+
+Non-proctored programming assignment 2 - NPPE2 (Configured in the portal in week 8)
+
+
+Quiz3 - based on content taught by Prof Kaushik (Based on weeks 9-12)
+
+Non-proctored programming assignment 3 - NPPE3 (Configured in the portal in week 12)
+
+
+Following are the tentative dates:
+
+
+Exam
+
+Syllabus
+
+NPPE Dates
+
+Timing
+
+NPPE1 Opens
+
+W1-W4
+
+Nov 6, 2026
+
+5:00PM
+
+NPPE1 Closes
+
+Nov 9, 2026
+
+11:59PM
+
+NPPE2 Opens
+
+W5-W8
+
+Nov 27, 2026
+
+5:00PM
+
+NPPE2 Closes
+
+Nov 30, 2026
+
+11:59PM
+
+NPPE3 Opens
+
+W9-W12
+
+Jan 1, 2027
+
+5:00PM
+
+NPPE3 Closes
+
+Jan 4, 2027
+
+11:59PM
+
+
+GAA - Average score in best 10 weekly graded assignments out of 11 assignments.
+
+
+T = 0.05 GA + 0.15 Quiz 1 + 0.15 Quiz 2 + 0.15 Quiz 3 + 0.25 *((NPPE1+NPPE2+NPPE3)/3) + 0.25 Viva
+
+
+Note:
+
+If both NPPEs are not submitted:
+
+The student will not be allowed to appear for the viva.
+
+
+If the student is absent for either NPPE 1 or NPPE 2:
+
+The student will receive no marks for the corresponding component (Text or Speech), resulting in a loss of 40 marks out of 100 in viva.
+
+
+10. Data Science and AI Lab (DA4001)
+Quiz 1: No Quiz                Quiz 2: December 5 2026                End term: No EndTerm
+
+
+1. Graded Assignments:
+
+Each week will contain a graded assignment based on the topics covered in that week
+
+2. Quiz: The quiz will be conducted at the time of quiz 2, covering the first 8 weeks' content.
+
+
+3. Group Project:
+
+Students will work on projects in groups. Each group is required to submit its project problem statement by Week 2. The problem statement has to involve either Deep Learning or Generative AI and has to be approved by the course team.
+The project will be broken down into milestones that will be evaluated through weekly meetings.
+A final project presentation will be held during weeks 10 & 11 for a comprehensive evaluation of the project.
+
+4. Viva:
+
+A Viva will be conducted individually after week 10 for each student by an industry professional.
+The viva will test understanding of the material covered in weeks 1-12 of the course.
+
+Assessment Type
+
+Mode of Evaluation
+
+Requirements
+
+Graded Assignments (GAA)
+
+Objective
+
+
+Quiz 2
+
+TCS platform
+
+Weeks 1-8
+
+Project Presentation (P)
+
+Group presentation (G-meet) + Milestones
+
+Completion of all the milestones
+
+Viva
+
+(V)
+
+One-to-One (G-meet)
+
+Average of the best 7 out of the first 8 weekly assignment scores >= 40/100
+
+
+Eligibility to obtain the final course grade: Attending the Project Presentation AND Viva marks >= 50%
+
+
+GAA = Average score in first 10 weekly graded assignments
+
+P = Combination of score in project presentation and milestones
+
+V = Score obtained in viva
+
+Quiz = Quiz 2
+
+Bonus: 3-4 bonus assignments (Could be Kaggle/Video submission)
+
+
+Final Course score T =  0.05 GAA + 0.25 Quiz + 0.4 P + 0.3 V + Bonus (5 marks)
+
+11. Application Development Lab (CS4010)
+Quiz 1: No Quiz        Quiz 2: December 5 2026        End term:  No End term
+
+Above to be attended in person at designated centres
+
+
+Eligibility to appear for Project Viva:
+
+To be eligible for the final project viva, learners must satisfy the following conditions by the end of Week 8:
+
+The average assignment score of first 8 weeks (week 1 - 8) assignments must be >=40
+Attempt both Lab Assignments in Weeks 4 and 5.
+Attempt Quiz 2
+Eligibility to get final course grade: Students should appear for the Project Viva and must score at least 25 out of 50 marks in the project component. Students must pass the project viva to get a course grade
+
+
+Assessment Type
+
+Method
+
+Proctoring
+
+Criteria
+
+Lab Assignment +
+
+Graded Assignment +
+
+Programming Assignment
+
+Auto evaluated via framework (weekly assignments)
+
+None
+
+Attempt both Lab Assignments in Weeks 4 and 5.
+
+In case of more than one assignment for a week, the average of all will be taken to calculate the score for that week
+
+Quiz 2
+
+Online computer Based
+
+TCS platform
+
+Week 1 to 8
+
+Project + Viva
+
+One-to-One G-meet
+
+
+Final course score T = 20% from Quiz 2 + 30% from weekly assignments (average score of first 10 weeks will be considered) + 50% from Project Viva
+
+
+12. Big Data and Biological Networks  (BT4002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres
+
+Eligibility to write end term exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in Best 8 out of first 9 weekly assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+13. Industry 4.0   (MS4001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+Eligibility to take the final exam:
+
+Submission of at least 1 out of the first three assignments - Asgn 1, Asgn 2 and Asgn 3 AND
+
+attending at least one of the two quizzes AND (participating the game OR Project Submission)
+
+Eligibility to get final course grade: Attending the end term exam
+
+15 marks: In center quiz – 7.5 marks for Quiz1 and 7.5 marks for Quiz 2
+
+Quiz 1 on November  15, 2026 and Quiz 2 on December 5 2026 (In person at centers)
+
+Quiz 1 will be from Week 1-4
+
+Quiz 2 will be from Week 5-8
+
+5 Marks: Online game: Yield Management Game (estimated duration 1.5 – 2 hours )
+
+4 marks for participating the game for the entire game horizon
+
+1 bonus mark for top 10 participants in terms of the game performance measure
+
+40 Marks: 3 Assignments for a total of 40 marks :
+
+Assignment 1: 20 marks
+
+Assignment 2: 20 marks
+
+Assignment 3: 20 marks
+
+A = Sum of the Best 2 out of (Assignment 1, Assignment 2, Assignment 3)
+
+Week no.
+
+Release date
+
+Submission date
+
+5
+
+Friday, October 30, 2026
+
+Wednesday, November 11, 2026
+
+6
+
+Friday, November 6, 2026
+
+Wednesday, November 18, 2026
+
+9
+
+Friday, November 27, 2026
+
+Sunday, December 6, 2026
+
+30 Marks (F): End Term Exam
+
+Will be set to 45 marks and students can attempt all.
+
+Marks obtained will be capped at 40.
+
+The syllabus for the End term exam will be the contents covered in Weeks 1 to 12
+
+10 Marks Project (P)
+
+1. Project submission (3 marks: Evaluated based on individual contributions within the group.)
+Identify a problem: Objective, Constraint, decision variables etc.,)
+Identify the relevant data
+Approach to solve the problem
+2 paged summary containing the above three points
+2. Presentation and viva (7 marks) -- Assessed by a panel
+Guidelines
+
+Teams of 5 members
+Teams need to be formed and informed to us by the end of Week 2
+2 paged project summary needs to submitted by the end of Week 8
+The concepts to be applied must strictly align with the topics covered in the BA and Industry 4.0 courses.
+Final Score T = 15 marks from 2 quizzes + 5 marks from Online game + 40 marks from best 2 assignments + 30 marks from ET exam + 10 marks from project
+
+
+14. Mathematical Thinking   (MA2001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+
+T = 0.1GAA + max (0.6F + 0.2max(Qz1, Qz2),  0.4F + 0.2Qz1 + 0.3Qz2)
+
+
+15. MLOps (Machine Learning Operations)  (DA5014)
+Quiz 1: NA                  Quiz 2: NA                End term:  January 10 2027
+
+Above to be attended in person at designated centres
+
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in best 9 out of 11 weekly graded assignments
+
+F = score in final exam (End Term)
+
+OPPE1 = score in Online Proctored Programming Exam 1 (0, if not attempted) (OPPE 1- November 22nd)
+
+OPPE2 = score in  Online Proctored Programming Exam 2 (0, if not attempted) (OPPE 2- January 3rd)
+
+Bonus: 5 marks for Active Course Participation
+
+T = 0.2GAA + 0.3F + 0.25 OPPE1 + 0.25 OPPE2 + Bonus (capped to 100)
+
+
+Note:
+
+This course requires students to have access to a credit card/debit card/UPI in order to obtain the $300 (~₹25,000) credits as part of GCP free trial
+
+
+Expected GCP Credit Usage is around ₹12,000.
+assuming resources are used optimally as instructed by the course Team (free credits provided by GCP should be sufficient for most students.)
+
+
+Please refer to FAQ Document for queries on Bonus, GCP Trial and course content: here
+
+
+16. Mathematical Foundations of Generative AI (DA5002)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+NPPE Dates: December 11 - 14 2026
+
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in best 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+NPPE =Non-proctored programming assignment
+
+T = 0.05*GAA + 0.4*F + 0.2*Qz1 + 0.2*Qz2 + 0.15*NPPE
+
+
+17. Speech Technology  (EE4001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+V = Viva
+
+F - score in End Term exam
+
+T = 0.15GAA + 0.15V + 0.3F+ 0.20Qz1 + 0.20Qz2
+
+
+18. Design Thinking for Data-Driven App Development (MS4002)
+Academic policies
+
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+
+Quiz 1 : No                         Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of 7 weekly assignment scores >= 40/100
+
+Eligibility to obtain the final course grade: Attending the term-end exam AND submitting the final project, with getting more than 60/100 in the project
+
+The calculation of final course score for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments (Subjective & Objective)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+GP1, GP2, GP3 = scores in the group project;
+
+F = score in final exam, based on weeks 1-12 (Subjective  & Objective)
+
+T = 0.1*GAA + 0.1*GP1 + 0.1*GP2 + 0.2*GP3 + 0.2Qz2 + 0.3*F
+
+
+Project:        YTD
+
+Milestone
+
+Timeline
+
+Submission Date
+
+Marks
+
+Evaluation and Score Release
+
+I
+
+
+II
+
+
+III
+
+
+Presentation
+
+
+More details about the Group Project will be given in the course.
+
+Bonus marks for additional activities may be awarded at the discretion of faculty or instructor, provided the student passes the course.
+
+
+19. Financial Forensics (MS4003)
+Quiz 1: November  15 2026           Quiz 2: No Quiz 2                End term:  January 10 2027
+
+Above to be attended in person at designated centres
+
+Remote Group Project 1:
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+Project Release date along with team split: 2nd/3rd November (the first weekend after Quiz 1)
+
+Team Leader nomination:
+
+Team Finalization (after expulsion of non performing students):
+
+Project Submission:
+
+Project Presentations:
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+Qz1 = score in Quiz I (0, if not attempted)
+
+GP1 = score in Group Project (0, if not attempted)
+
+F = score in final exam
+
+
+T = 0.1GAA + 0.25Qz1 + 0.30GP1 + 0.35F
+
+
+20. Introduction to Big Data  (DA5001)
+Academic policies
+
+1. In each programming assignment, be it any course or any OPPE,  taking help from LLMs (e.g. ChatGPT, Gemini) partially or completely is considered plagiarism.
+
+2. Unless explicitly permitted, do not use LLMs. Using LLMs is considered a violation of honour code.
+
+3. Students can discuss and learn from each other but the assignments are expected to be done individually based on their understanding.
+
+4. Please do not share your assignments with others before the deadlines. If similarities are found between submissions, all will be penalised irrespective of who did it first and who shared it with whom.
+
+Note: This course requires students to have access to link a credit card and avail $300 one time free credit available for GOOGLE CLOUD platform. If you do not have either a credit card or have availed the free Google Cloud credits, then you might have to pay to consume resources required on Google Cloud.
+
+Quiz 1:No Quiz                          Quiz 2: No Quiz                              End term: January 10, 2027
+
+Above to be attended in person at designated centres.
+
+OPPE 1: Sunday, November 22, 2026
+
+OPPE 2: Sunday, December 20, 2026
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100
+
+Eligibility to get the course grade: Attending the end sem exam AND one programming exam with score in programming exam >= 40/100
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in Best 6 out of 9 weekly graded assignments
+
+Quiz 1 and quiz 2 : Not applicable for this course
+
+F = score in final exam
+
+Bonus: 5 marks for live session attendance
+
+T = 0.1 GAA + 0.3 F + 0.2 OPPE1 + 0.4 OPPE2 + Bonus
+
+
+OPE1/OPE2
+
+ET
+
+T
+
+Grade
+
+
+1.
+
+Absent
+
+Absent
+
+ -
+
+U
+
+
+2.
+
+Absent (PE1 and PE2=0)
+
+Present
+
+>=35
+
+I_OP
+
+Complete OPE alone in next term,
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+3.
+
+<35
+
+U
+
+Repeat the entire course
+
+4
+
+Present
+
+score< 30/100
+
+Present
+
+>=40
+
+I_OP
+
+Redo OPE alone in next term,
+
+GA, quiz and ET marks will be carried over OR
+
+Repeat the entire course
+
+5
+
+<40
+
+U
+
+Repeat the entire course
+
+6
+
+Absent
+
+-
+
+I_BOTH
+
+Redo End term exam and OPE alone in next term.
+
+GA, quiz will be carried over. OR
+
+Repeat the entire course
+
+7
+
+Present
+
+Score > 30/100
+
+Absent
+
+-
+
+I
+
+Complete ET alone in next term;
+
+OPPE will NOT be scheduled.
+
+GA, quiz and OPPE marks will be carried over OR
+
+Repeat the entire course
+
+8
+
+Present
+
+
+Grade as per the Total score T
+
+
+21 . Linear Models with Applications (MA3015)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to attend final exam: Average of the best 5 out of the first 7 assignment scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get the final course grade: Attending the end sem exam
+
+The calculation of Final course Score is proposed as follows:
+
+GAA =  Average score in First 10 weekly graded assignments (Subjective and Objective)
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+P = score in the project
+F = score in final exam
+
+Overall score for eligible students:
+
+T = 0.1 GAA + 0.25*P + max(0.35 F + 0.20 max(Qz1,Qz2) , 0.35F + 0.15Qz1 + 0.15Qz2)
+
+22. Special topics in ML (Reinforcement Learning) (DA5007)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026        End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam: Average of best 5 out of first 7 weekly assessments scores >= 40/100 and attending at least one of the 2 quizzes in the centre
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in First 10 weekly graded assignments
+
+GPA = Graded Programming Assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F - score in End Term exam
+
+BONUS - based on exceptionally good performance overall in programming assignments (5 marks out of T-score); awarded at the discretion of the instructor
+
+T = 0.05 GAA(autograded) + 0.25 GPA + 0.2Qz1 + 0.2Qz2 + 0.3F + BONUS
+
+
+23. Corporate Finance  (MS3034)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA +  0.4F + 0.2Qz1 + 0.3Qz2
+
+
+24. Computer Networks (CS4024)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA =Average score in 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA + 0.30F + 0.25Qz1 + 0.25Qz2 + 0.1 Programming assignment
+
+
+25. Computer Systems Design (CS3031)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA =Average score in 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+ T = 0.1GAA + 0.4F + 0.2Qz1 + 0.25Qz2 + 0.05 circuit verse assignment
+
+
+26. Game Theory and Strategy (MS4023)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+
+27. Algorithms for Data Science (ADS)  (DA5003)
+Quiz 1: November  15 2026                  Quiz 2: December 5 2026        End term:  January 10 2027
+
+Above to be attended in person at designated centres.
+
+
+Theory Assignments
+
+Once in two weeks: W2, W4, W6, W8, W10, W12
+The questions will be objective: MCQ-MSQ-NAT
+Exams
+
+Objective: MCQ-MSQ-NAT
+Quiz-1, quiz-2 and end-term
+Bonus
+
+Programming assignment
+
+Eligibility to write the final exam: Average of the best 2 out of the first 3 assignment scores (W2, W4, W6) >= 40/100
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in all six graded assignments (W2, W4, W6, W8, W10, W12)
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+BONUS = at most 5 marks based on programming assignment score
+
+
+T = 0.1GAA + 0.4F + 0.25Q1 +  0.25Qz2 + BONUS (PA)
+
+
+28. Compiler Design   (CS4032)
+
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes.
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA =Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz 2 (0, if not attempted)
+
+F = score in final exam
+
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+
+29. Sequential Decision Making (DA6004)
+
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes.
+
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA =Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz 2 (0, if not attempted)
+
+F = score in final exam
+
+PA- Programming Assignments
+
+
+Above to be attended in person at designated centres.
+
+Total course score T = 0.1GAA + 0.4F + 0.25Q1 +  0.25Qz2 + BONUS (PA)
+
+Bonus max 5 marks.
+
+
+30. Operating Systems (CS4022)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write end term exam: Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes
+
+Eligibility to get final course grade: Attending the End sem exam
+
+Overall score for eligible students:
+
+GAA = Average score in 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+
+31. Discrete Mathematics (MA3001)
+Quiz 1: November  15 2026           Quiz 2: December 5 2026                End term:  January 10 2027
+
+
+Above to be attended in person at designated centres.
+
+Eligibility to write the final exam: Average of the best 5 out of the first 7 weekly assignment scores >= 40/100 AND attendance in one of the 2 quizzes.
+
+- Eligibility to obtain the final course grade: Attending the end term exam
+
+- The calculation of Final course Score T for eligible students is as follows:
+
+GAA =Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+
+Qz2 = score in Quiz II (0, if not attempted)
+
+F = score in final exam
+
+T = 0.1GAA + 0.4F + 0.25Qz1 + 0.25Qz2
+
+
+32 . Digital IC Design  ( EE5102 )
+
+Quiz 1: Sunday, November 15th, 2026          Quiz 2: Saturday, December 5th, 2026                  End Term: Sunday, January 10, 2027
+
+Above to be attended in person at designated centers.
+
+Prerequisites: None                Corequisites : None                Credits: 4
+
+Eligibility to write the final exam:
+
+Average of the best 5 out of the first 7 weekly assignment scores >= 40/100
+AND Attendance in one of the 2 quizzes
+Eligibility to obtain the final course grade: Attending the end term exam
+
+Final course Score T calculation:
+
+GAA = Average score in First 10 weekly graded assignments
+Qz1 = score in Quiz I (0, if not attempted)
+Qz2 = score in Quiz II (0, if not attempted)
+F = score in final exam
+P = Course Project
+T = 0.1GAA+0.3P+max(0.3F+0.2max(Qz1,Qz2),0.3F+0.15Qz1+0.15Qz2)
+
+(Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+33 . Electronic Testing and Measurement (EE2105)
+Quiz 1: Sunday, November 15th, 2026          Quiz 2: Saturday, December 5th, 2026                  End Term: Sunday, January 10, 2027
+
+Above to be attended in person at designated centers.
+
+Prerequisites: None                Corequisites : None                Credits: 4
+
+Eligibility to write the final exam:
+
+Average of the best 5 out of the first 6 weeks of weekly assignment scores >= 40/100
+AND
+
+Attendance in one of the 2 quizzes
+Eligibility to obtain the final course grade: Attending the end term exam
+Final course Score T calculation:
+
+GAA = Average score in first 10 weekly graded assignments
+Qz1 = score in Quiz I (0, if not attempted)
+Qz2 = score in Quiz II (0, if not attempted)
+F = score in final exam
+
+T = 0.1GAA + max (0.6F + 0.2max(Qz1, Qz2),  0.5F + 0.2Qz1 + 0.2Qz2) (Tentative)
+
+
+(Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+34 . Communication Systems (EE4103)
+
+
+Quiz 1: Sunday, November 15th, 2026          Quiz 2: Saturday, December 5th, 2026                  End Term: Sunday, January 10, 2027
+
+Above to be attended in person at designated centers.
+
+Prerequisites:None                        Credits: 4
+
+Eligibility to write the final exam:
+
+Average of the best 5 out of the first 7 weekly assignment scores >= 40/100
+AND Attendance in one of the 2 quizzes
+Eligibility to obtain the final course grade: Attending the end term exam
+
+Final course Score T calculation:
+
+GAA = Average score in First 10 weekly graded assignments
+Qz1 = score in Quiz I (0, if not attempted)
+Qz2 = score in Quiz II (0, if not attempted)
+F = score in final exam
+T = 0.1GAA + max (0.6F + 0.2max(Qz1, Qz2),  0.4F + 0.2Qz1 + 0.3Qz2)
+
+
+NOTE: Uploading of the worked out solution of GA is mandatory.
+
+(Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+35 . Digital System Design (EE2103)
+
+Quiz 1: Sunday, November 15th, 2026         Quiz 2: Saturday, December 5th, 2026                  End Term: Sunday, January 10, 2027
+
+Above to be attended in person at designated centers.
+
+Prerequisites: None                Corequisites : None                Credits: 4
+
+Eligibility to write the final exam:
+
+Average of the best 5 out of the first 7 weeks of weekly assignment scores >= 40/100
+AND
+
+Attendance in one of the 2 quizzes
+Eligibility to obtain the final course grade: Attending the end term exam
+
+The calculation of Final course Score T for eligible students is as follows:
+
+GAA = Average score in First 10 weekly graded assignments
+
+Qz1 = score in Quiz I (0, if not attempted)
+Qz2 = score in Quiz II (0, if not attempted)
+F = score in final exam
+T = 0.05 GAA + max(0.6F + 0.25max(Qz1,Qz2),0.5F+0.2Qz1+0.25Qz2)
+
+NOTE: Uploading of the worked out solution of GA is mandatory.
+
+Across Quiz-1, Quiz-2, and the End-Term exam, 5% of the questions will be direct questions from the Graded Assignments.
+
+(Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+36 .Computer Organization (EE2106)
+
+Quiz 1: Sunday, November 15th, 2026                         Quiz 2: Saturday, December 5th, 2026                  End Term: Sunday, January 10, 2027
+
+Above to be attended in person at designated centers.
+
+Prerequisites: None                        Credits: 4
+
+Eligibility to write the final exam:
+
+Average of the best 5 out of the first 7 weekly assignment scores >= 40/100
+AND Attendance in one of the 2 quizzes
+Eligibility to obtain the final course grade: Attending the end term exam
+
+Final course Score T calculation:
+
+GAA = Average score in First 10 weekly graded assignments
+Qz1 = score in Quiz I (0, if not attempted)
+Qz2 = score in Quiz II (0, if not attempted)
+F = score in final exam
+T=0.05 GAA + max(0.6F + 0.25max(Qz1,Qz2),(0.5F+0.2Qz1+0.25Qz2))
+
+
+Across Quiz-1, Quiz-2, and the End-Term exam, 5% of the questions will be direct questions from the Graded Assignments. (Though the W11/W12 assignment score is not included in GAA, W11/W12 contents will be included for the final exam. Hence, please practice and submit W11/W12 assignment).
+
+
+Annexure I
+SCHEDULE IS TENTATIVE AND SUBJECT TO CHANGE DEPENDING ON FACULTY AVAILABILITY AND NUMBER OF STUDENTS WHO REGISTER TO THE COURSES. IF THE REGISTRATION TO ANY COURSE IS VERY LESS, THE COURSE OFFERING MAY BE CANCELLED IN THE TERM.
+
+
+*Course offering is subject to registration number
+
+
+Course ID
+
+Course Level
+
+Course Name
+
+Course Type
+
+Prerequisite code
+
+CoRequisite code
+
+Credits
+
+Sep 2026
+
+Jan 2027
+
+May 2027
+
+Sep 2027
+
+CourseFee
+
+New Course Fee for Students started foundation level on or after Jan 2026 term
+
+BSCS3001
+
+DEGREE
+
+Software Engineering
+
+Core_BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS3002
+
+DEGREE
+
+Software Testing
+
+Core_BP
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS3003
+
+DEGREE
+
+AI: Search Methods for Problem Solving
+
+Core_BD
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS3004
+
+DEGREE
+
+Deep Learning
+
+Core_BD
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSGN3001
+
+DEGREE
+
+Strategies for Professional Growth
+
+Core_HM
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSBT4001
+
+L4_DEGREE
+
+Algorithmic Thinking in Bioinformatics
+
+BD/BP
+
+-
+
+-
+
+4
+
+N
+
+Y
+
+Y
+
+N
+
+20000
+
+20000
+
+BSBT4002
+
+L4_DEGREE
+
+Big Data and Biological Networks
+
+BD/BP
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSCS4001
+
+L4_DEGREE
+
+Data Visualization Design
+
+BD
+
+-
+
+-
+
+4
+
+N
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSEE4001
+
+L4_DEGREE
+
+Speech Technology
+
+BD
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSMS4002
+
+L4_DEGREE
+
+Design Thinking for Data-Driven App Development
+
+HM/BP
+
+-
+
+-
+
+4
+
+Y
+
+N
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSMS4001
+
+L4_DEGREE
+
+Industry 4.0
+
+HM/BD
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSMS4003
+
+L4_DEGREE
+
+Financial Forensics
+
+HM/BD
+
+-
+
+-
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSMS3002
+
+DEGREE
+
+Market Research
+
+HM
+
+-
+
+-
+
+4
+
+N
+
+Y
+
+Y
+
+N
+
+10000
+
+12000
+
+BSDA5001
+
+L5_DEGREE
+
+Introduction to Big Data
+
+BD/BP
+
+-
+
+-
+
+4
+
+Y
+
+N
+
+Y
+
+N
+
+20000
+
+20000
+
+BSCS4003
+
+L4_DEGREE
+
+Privacy & Security in Online Social Media
+
+BD/BP
+
+-
+
+-
+
+4
+
+N
+
+N
+
+Y
+
+N
+
+20000
+
+20000
+
+BSMA2001
+
+DEGREE
+
+Mathematical Thinking
+
+SE
+
+
+4
+
+Y
+
+N
+
+N
+
+Y
+
+10000
+
+12000
+
+BSMA3012
+
+DEGREE
+
+Linear Statistical Models
+
+SE
+
+
+4
+
+N
+
+N
+
+Y
+
+N
+
+10000
+
+12000
+
+BSMA3014
+
+DEGREE
+
+Statistical Computing
+
+SE
+
+
+4
+
+N
+
+Y
+
+N
+
+N
+
+10000
+
+12000
+
+BSCS4021
+
+L4_DEGREE
+
+Advanced Algorithms
+
+BP
+
+
+4
+
+N
+
+Y
+
+N
+
+N
+
+20000
+
+20000
+
+BSCS3031
+
+DEGREE
+
+Computer Systems Design
+
+BP
+
+
+BSCS3005
+
+4
+
+Y
+
+N
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS4022
+
+L4_DEGREE
+
+Operating Systems
+
+BP
+
+BSCS3031
+
+
+4
+
+Y
+
+Y
+
+N
+
+N
+
+20000
+
+20000
+
+BSDA5007
+
+L5_DEGREE
+
+Reinforcement Learning
+
+BD
+
+
+BSCS3004
+
+4
+
+Y
+
+N
+
+Y
+
+N
+
+20000
+
+20000
+
+BSCS3005
+
+DEGREE
+
+Programming in C
+
+BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS4024
+
+L4_DEGREE
+
+Computer Networks
+
+BP
+
+BSCS3005
+
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+20000
+
+20000
+
+BSDA5005
+
+L5_DEGREE
+
+Introduction to Natural Language Processing (i-NLP)
+
+BD
+
+
+4
+
+N
+
+N
+
+N
+
+N
+
+20000
+
+20000
+
+BSDA5006
+
+L5_DEGREE
+
+Deep Learning for Computer Vision
+
+BD
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA5004
+
+L5_DEGREE
+
+Large Language Models
+
+BD
+
+BSCS3004
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSMS4023
+
+L4_DEGREE
+
+Game Theory and Strategy
+
+HM/BD
+
+
+4
+
+Y
+
+N
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSMS3033
+
+DEGREE
+
+Managerial Economics
+
+HM
+
+
+4
+
+N
+
+Y
+
+Y
+
+N
+
+10000
+
+12000
+
+BSMS3034
+
+DEGREE
+
+Corporate Finance
+
+HM
+
+
+4
+
+Y
+
+Y
+
+N
+
+Y
+
+10000
+
+12000
+
+BSDA6004
+
+L5_DEGREE
+
+Sequential Decision Making
+
+BD
+
+
+4
+
+Y
+
+NA
+
+NA
+
+NA
+
+20000
+
+20000
+
+BSDA5014
+
+L5_DEGREE
+
+ML Ops
+
+BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA5002
+
+L5_DEGREE
+
+Mathematical Foundations of Generative AI
+
+BD / BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA5003
+
+L5_DEGREE
+
+Algorithms for Data Science
+
+BD / BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA5013
+
+L5_DEGREE
+
+Deep Learning Practice
+
+BD / BP
+
+BSCS3004
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA4001
+
+L4_DEGREE
+
+Data Science and AI Lab
+
+BD
+
+BSCS3004
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSCS4010
+
+L4_DEGREE
+
+Application Development Lab
+
+BP
+
+
+4
+
+Y
+
+Y
+
+Y
+
+Y
+
+20000
+
+20000
+
+BSDA4002
+
+GATE
+
+Comprehensive Exam - Data Science & Artificial Intelligence
+
+BD
+
+
+2
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+10000
+
+BSCS4009
+
+GATE
+
+Comprehensive Exam - Computer Science & Information Technology
+
+BP
+
+
+2
+
+Y
+
+Y
+
+Y
+
+Y
+
+10000
+
+10000
+
+BSCS3021
+
+DEGREE
+
+Theory of Computation
+
+BP
+
+
+4
+
+N
+
+Y
+
+N
+
+Y
+
+10000
+
+12000
+
+BSMA3001
+
+DEGREE
+
+Discrete Mathematics
+
+BP
+
+
+4
+
+Y
+
+N
+
+Y
+
+Y
+
+10000
+
+12000
+
+BSCS4032
+
+L4_DEGREE
+
+Compiler Design
+
+BP
+
+BSCS3005
+
+
+4
+
+Y
+
+N
+
+Y
+
+Y
+
+20000
+
+20000
+
+EE5102
+
+DEGREE
+
+Digital IC Design
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+24000
+
+24000
+
+EE2105
+
+DEGREE
+
+Electronic Testing and Measurement
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+16000
+
+16000
+
+EE3106
+
+DEGREE
+
+Semiconductor Devices and VLSI Technology
+
+SE
+
+
+4
+
+N
+
+-
+
+-
+
+-
+
+24000
+
+24000
+
+EE5101
+
+DEGREE
+
+Internet of Things (IoT)
+
+-
+
+
+4
+
+N
+
+-
+
+-
+
+-
+
+24000
+
+24000
+
+EE4103
+
+DEGREE
+
+Communication Systems
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+24000
+
+24000
+
+EE2103
+
+DEGREE
+
+Digital System Design
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+16000
+
+16000
+
+EE2106
+
+DEGREE
+
+Computer Organisation
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+16000
+
+16000
+
+BSMA3015
+
+DEGREE
+
+Linear Model with Applications
+
+SE
+
+
+4
+
+Y
+
+-
+
+-
+
+-
+
+10000
+
+12000
+
+
+MODE OF ANNOUNCEMENTS:
+
+IMPORTANT: Students are required to subscribe to both the course calendar and the academic calendar.
+
+
+AWAITING FOR CLASS COMMITTEE APPROVAL*

@@ -1,12 +1,32 @@
 import os
+import re
 import json
+import hashlib
 import chromadb
+from typing import Dict, List, Optional
 from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
+from chromadb.errors import NotFoundError
 from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
 
 
 HANDBOOK_DB_PATH = "./handbook_db"
+
+# Grading document of the current term. To update for a new term, replace this file
+# (and GRADING_TERM); the app rebuilds the grading index on its next start.
+GRADING_PATH = os.path.join("Data", "grading", "sep2026_grading_document.txt")
+GRADING_TERM = "Sep 2026"
+
+# A course section starts with a heading like "3. Computational Thinking (CS1001)"
+_COURSE_HEADING = re.compile(r"^\s*\d+\s*\.\s*(?P<title>.+?)\s*\(\s*(?P<code>[A-Z]{2}\d{4})\s*\)\s*$")
+# Short summary of the term's exam dates, always sent with general questions
+KEY_DATES_TITLE = "Key exam dates (Sep 2026 term)"
+# General (non-course) parts of the grading document start with one of these lines
+_GENERAL_HEADINGS = {
+    KEY_DATES_TITLE, "OPPE SCHEDULE (Sep 2026 TERM)", "ASSIGNMENT DEADLINES:", "Bonus Marks",
+    "Information about course grades:", "Diploma Level courses", "Project Courses:",
+    "Degree Level courses", "Annexure I",
+}
 
 
 def load_embedding_function() -> DefaultEmbeddingFunction:
@@ -58,6 +78,74 @@ def ingest_handbook(handbook_path: str, client, embedding_function, collection_n
 
 
 
+def file_hash(path: str) -> str:
+    with open(path, "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()
+
+
+def split_grading_sections(text: str) -> List[Dict[str, Optional[str]]]:
+    """
+    Splits the grading document into sections: one per course (with its course code)
+    plus the general parts (exam schedule, deadlines, grades, projects, degree rules...).
+    Returns [{"title": ..., "code": "CS1001" or None, "text": ...}].
+    """
+    sections = []
+    current = {"title": "Exam schedule, OPPE eligibility and term rules", "code": None, "heading": "", "body": []}
+
+    for line in text.splitlines():
+        course = _COURSE_HEADING.match(line)
+        if course or line.strip() in _GENERAL_HEADINGS:
+            sections.append(current)
+            current = {
+                "title": course.group("title") if course else line.strip().rstrip(":"),
+                "code": course.group("code") if course else None,
+                "heading": line,
+                "body": [],
+            }
+        else:
+            current["body"].append(line)
+    sections.append(current)
+
+    return [
+        {
+            "title": s["title"],
+            "code": s["code"],
+            "text": re.sub(r"\n{3,}", "\n\n", "\n".join([s["heading"]] + s["body"])).strip(),
+        }
+        for s in sections
+        if "".join(s["body"]).strip()  # skip headings that only appear in the table of contents
+    ]
+
+
+def ingest_grading(grading_path: str, client, embedding_function, collection_name: str = "grading"):
+    """
+    Chunks the current term's grading document section by section and stores it in its own
+    collection. Each chunk starts with its section title so the course name survives chunking.
+    The collection is rebuilt from scratch, so chunks from an older document never linger.
+    """
+    with open(grading_path, encoding="utf-8") as f:
+        sections = split_grading_sections(f.read())
+
+    try:
+        client.delete_collection(collection_name)
+    except (NotFoundError, ValueError):
+        pass
+    collection = client.create_collection(name=collection_name, metadata={"source_hash": file_hash(grading_path)})
+
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=1500, chunk_overlap=200)
+    documents, ids, metadatas = [], [], []
+    for s_idx, section in enumerate(sections):
+        label = f"[{GRADING_TERM} grading document — {section['title']}" + (f" ({section['code']})]" if section["code"] else "]")
+        for c_idx, chunk in enumerate(text_splitter.split_text(section["text"])):
+            documents.append(f"{label}\n{chunk}")
+            ids.append(f"grading_{s_idx}_{c_idx}")
+            metadatas.append({"section": section["title"], "code": section["code"] or ""})
+
+    collection.add(embeddings=embedding_function(documents), documents=documents, ids=ids, metadatas=metadatas)
+    print(f"Grading document ingestion complete: {len(sections)} sections, {collection.count()} chunks.")
+
+
+
 def ingest_subjects(subject_folder: str, output_json_path: str = "subjects_db.json"):
     """
     Loads all subjects .txt file whole and saves them into a dictionary in a JSON file
@@ -98,6 +186,7 @@ def main():
     embedding_function = load_embedding_function()
 
     ingest_handbook(os.path.join(data_folder, "handbook.txt"), client, embedding_function)
+    ingest_grading(GRADING_PATH, client, embedding_function)
     ingest_subjects(data_folder)
 
 
