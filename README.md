@@ -30,7 +30,7 @@ The app uses three LLM providers:
 | Google Gemini | `gemini-flash-latest` | Answers when AI Pipe is unavailable |
 | Groq | `openai/gpt-oss-20b` | Routing questions (very fast), and last fallback for answers |
 
-Answer order is AI Pipe → Gemini → Groq. Routing is a simple classification, so it runs on free Groq first to save the AI Pipe budget and Gemini quota for the answers. Each step falls back to the next provider: if one provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. The terminal logs which provider answered each request.
+Answer order is AI Pipe → Gemini → Groq. Routing is a simple classification, so it runs on free Groq first to save the AI Pipe budget and Gemini quota for the answers. Each step falls back to the next provider: if one provider errors, times out, hits a rate limit or returns an empty response, the same request is retried on the next provider automatically. A provider that fails is skipped for 5 minutes, so visitors don't keep waiting on it. The terminal logs which provider answered each request and how long it took.
 
 Embeddings are generated locally with `all-MiniLM-L6-v2`, run through ONNX by ChromaDB, so retrieval needs no API and no PyTorch.
 

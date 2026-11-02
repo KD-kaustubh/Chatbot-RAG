@@ -5,10 +5,11 @@ Two provider orders are used, both configurable in .env:
 - ROUTER_ORDER for classifying the question (default: groq,gemini,aipipe)
 - LLM_ORDER for writing the answer (default: aipipe,gemini,groq)
 If a provider errors, times out, hits a rate limit or returns an empty response,
-the next provider in the list is used.
+the next provider in the list is used, and the failed one is skipped for a few minutes.
 """
 import logging
 import os
+import time
 from typing import Any, Callable, Dict, List, Tuple
 
 from langchain_core.language_models import BaseChatModel
@@ -28,7 +29,9 @@ DEFAULT_ROUTER_ORDER = "groq,gemini,aipipe"  # routing is simple, keep paid/limi
 DEFAULT_ANSWER_ORDER = "aipipe,gemini,groq"  # best answers first, free providers as fallback
 
 AIPIPE_BASE_URL = "https://aipipe.org/openai/v1"
-REQUEST_TIMEOUT = 60  # seconds before giving up on a provider
+REQUEST_TIMEOUT = 30  # seconds before giving up on a provider
+AIPIPE_TIMEOUT = 15   # AI Pipe answers in ~2s when it works, but can hang from some cloud hosts
+COOLDOWN_SECONDS = 300  # how long a failed provider is skipped before trying it again
 
 
 def _gemini() -> BaseChatModel:
@@ -36,7 +39,7 @@ def _gemini() -> BaseChatModel:
         model=os.getenv("GEMINI_MODEL", "gemini-flash-latest"),
         google_api_key=os.getenv("GEMINI_API_KEY"),
         timeout=REQUEST_TIMEOUT,
-        max_retries=2,  # Gemini often returns short-lived 503 "high demand" errors
+        max_retries=1,  # one retry for Gemini's short-lived 503 "high demand" errors
     )
 
 
@@ -47,8 +50,8 @@ def _aipipe() -> BaseChatModel:
         model=os.getenv("AIPIPE_MODEL", "gpt-4.1-mini"),
         api_key=os.getenv("AI_PIPE"),
         base_url=AIPIPE_BASE_URL,
-        timeout=REQUEST_TIMEOUT,
-        max_retries=1,
+        timeout=AIPIPE_TIMEOUT,
+        max_retries=0,
     )
 
 
@@ -110,18 +113,32 @@ def invoke_with_fallback(
 ) -> Any:
     """
     Runs the chain built by build_chain(model) on each provider in turn and
-    returns the first non-empty result.
+    returns the first non-empty result. A provider that fails is skipped for
+    COOLDOWN_SECONDS, so only one visitor waits for it instead of everyone.
     """
+    now = time.time()
+    available = [(name, model) for name, model in models if _skip_until.get(name, 0) <= now]
+    if not available:
+        available = models  # everything failed recently, so try them all again
+
     errors = []
-    for name, model in models:
+    for name, model in available:
+        start = time.time()
         try:
             result = build_chain(model).invoke(inputs)
             if result is None or (isinstance(result, AIMessage) and not result.text.strip()):
                 raise ValueError("empty response")
-            print(f"[LLM] Response from {name}")
+            _skip_until.pop(name, None)
+            print(f"[LLM] Response from {name} in {time.time() - start:.1f}s")
             return result
         except Exception as e:
-            print(f"[LLM] {name} failed: {type(e).__name__}: {str(e)[:200]}")
+            _skip_until[name] = time.time() + COOLDOWN_SECONDS
+            print(f"[LLM] {name} failed after {time.time() - start:.1f}s, skipping it for "
+                  f"{COOLDOWN_SECONDS // 60} min: {type(e).__name__}: {str(e)[:200]}")
             errors.append(f"{name}: {e}")
 
     raise RuntimeError("All LLM providers failed:\n" + "\n".join(errors))
+
+
+# provider name -> time until which it is skipped after a failure (shared by all visitors)
+_skip_until: Dict[str, float] = {}
