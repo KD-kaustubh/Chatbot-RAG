@@ -12,6 +12,18 @@ Summary copied from the schedule tables below.
 - TDS Remote Online Exam (ROE): Sunday, November 29, 2026
 Some courses have no Quiz 1 or no Quiz 2; check the course's own section below.
 
+Abbreviations used in this document
+Full forms as written in this document.
+- OPPE / OPE: Online Proctored Programming Exam (remote proctored online mode); OPPE1 and OPPE2 are the two programming exams
+- SCT: OPPE System Compatibility Test, which has to be completed to be eligible for OPPE
+- GA: Graded Assignment; GrPA: Graded Programming Assignment
+- GAA: average score of the weekly graded assignments, as defined in each course's grading formula
+- ET / F: End term (final) exam
+- ROE: Remote Online Exam (TDS)
+- NPPE: Non-proctored programming assignment
+- BPT: Biweekly Programming Test (System Commands)
+- KA: Kaggle Assignments (MLP)
+
 Grading Document
 
 IITM's BS in Data Science and Applications program

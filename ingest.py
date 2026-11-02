@@ -19,11 +19,13 @@ GRADING_TERM = "Sep 2026"
 
 # A course section starts with a heading like "3. Computational Thinking (CS1001)"
 _COURSE_HEADING = re.compile(r"^\s*\d+\s*\.\s*(?P<title>.+?)\s*\(\s*(?P<code>[A-Z]{2}\d{4})\s*\)\s*$")
-# Short summary of the term's exam dates, always sent with general questions
+# Short summaries always sent with questions: the term's exam dates, and the full forms of
+# abbreviations (so the LLM doesn't guess what e.g. SCT stands for)
 KEY_DATES_TITLE = "Key exam dates (Sep 2026 term)"
+ABBREVIATIONS_TITLE = "Abbreviations used in this document"
 # General (non-course) parts of the grading document start with one of these lines
 _GENERAL_HEADINGS = {
-    KEY_DATES_TITLE, "OPPE SCHEDULE (Sep 2026 TERM)", "ASSIGNMENT DEADLINES:", "Bonus Marks",
+    KEY_DATES_TITLE, ABBREVIATIONS_TITLE, "OPPE SCHEDULE (Sep 2026 TERM)", "ASSIGNMENT DEADLINES:", "Bonus Marks",
     "Information about course grades:", "Diploma Level courses", "Project Courses:",
     "Degree Level courses", "Annexure I",
 }

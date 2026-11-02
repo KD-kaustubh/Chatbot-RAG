@@ -16,7 +16,7 @@ from langchain_core.prompts import PromptTemplate
 from chromadb.errors import NotFoundError
 from ingest import (
     ingest_handbook, ingest_grading, split_grading_sections, file_hash, load_embedding_function,
-    HANDBOOK_DB_PATH, GRADING_PATH, GRADING_TERM, KEY_DATES_TITLE,
+    HANDBOOK_DB_PATH, GRADING_PATH, GRADING_TERM, KEY_DATES_TITLE, ABBREVIATIONS_TITLE,
 )
 
 
@@ -111,7 +111,11 @@ with open(GRADING_PATH, encoding="utf-8") as f:
 grading_by_code = {s["code"]: s for s in grading_sections if s["code"]}
 project_grading_section = next(s for s in grading_sections if s["title"] == "Project Courses")
 # Only the summary lines, not the raw schedule tables that follow them in the same section
-key_dates_text = next(s for s in grading_sections if s["title"] == KEY_DATES_TITLE)["text"].split("\n\n")[0]
+def _summary_block(title: str) -> str:
+    return next(s for s in grading_sections if s["title"] == title)["text"].split("\n\n")[0]
+
+key_dates_text = _summary_block(KEY_DATES_TITLE)
+abbreviations_text = _summary_block(ABBREVIATIONS_TITLE)
 
 try:
     grading_collection = handbook_client.get_collection(name="grading")
@@ -222,7 +226,9 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
     if query_type == "subject_content":
         print(f"Retrieving content for subject(s): {subjects}")
         budget = MAX_SUBJECT_CONTEXT_CHARS // len(subjects)
-        context = "\n\n========\n\n".join(subject_context(subject_key, budget) for subject_key in subjects)
+        context = abbreviations_text + "\n\n========\n\n" + "\n\n========\n\n".join(
+            subject_context(subject_key, budget) for subject_key in subjects
+        )
 
     else:
         # The standalone version finds better matches for follow-ups like "what about its fees?"
@@ -239,7 +245,7 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
         )
         context = (
             f"SOURCE: {GRADING_TERM} grading document (current term)\n\n"
-            + key_dates_text + "\n\n----\n\n"
+            + key_dates_text + "\n\n----\n\n" + abbreviations_text + "\n\n----\n\n"
             + "\n\n----\n\n".join(grading_results["documents"][0])
             + "\n\n========\n\nSOURCE: Student handbook (updated July 2026; program rules, fees, levels and policies)\n\n"
             + "\n\n----\n\n".join(handbook_results["documents"][0])
