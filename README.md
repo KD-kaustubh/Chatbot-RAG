@@ -24,9 +24,9 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
 |--------|------|----------|
 | Sep 2026 grading document | `Data/grading/sep2026_grading_document.txt` | Current term: quiz, OPPE and end term dates, assignment deadlines, eligibility rules and grading formulas for all 57 courses, projects, course offerings and fees |
 | Course documents | `Data/*.txt` (one per subject) | Syllabus and learning outcomes of the foundation and diploma subjects |
-| Student handbook | `Data/handbook.txt` | General program rules, levels, credits and policies (may be from an older term) |
+| Student handbook (updated July 2026) | `Data/handbook.txt` | Program rules, levels, credits, fees, admission, milestones, minors, certificates, policies and the exam calendar for 2026–2030 |
 
-**Updating for a new term:** replace the grading document file (and `GRADING_TERM` in `ingest.py`). The app notices the file changed and rebuilds the grading index on its next start.
+**Updating the data:** replace `Data/handbook.txt` or the grading document file (for a new term, also update `GRADING_TERM` in `ingest.py`). The app notices a changed file and rebuilds that index on its next start.
 
 The last few messages of the chat are sent along with each question, so follow-ups like "How is it graded?" work. The router rewrites them into a standalone question ("How is the Maths 1 course graded?") before searching.
 

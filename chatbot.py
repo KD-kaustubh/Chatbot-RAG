@@ -96,9 +96,11 @@ embedding_function = load_embedding_function()
 handbook_client = chromadb.PersistentClient(path=HANDBOOK_DB_PATH)
 try:
     handbook_collection = handbook_client.get_collection(name="handbook")
+    if (handbook_collection.metadata or {}).get("source_hash") != file_hash(HANDBOOK_PATH):
+        raise NotFoundError("handbook changed")
 except NotFoundError:
-    # handbook_db/ is not in git, so a fresh clone or deployment builds it on first start
-    print("Handbook database not found, building it now (first start only)...")
+    # first start (handbook_db/ is not in git), or the handbook was replaced with a newer one
+    print("Building the handbook index...")
     ingest_handbook(HANDBOOK_PATH, handbook_client, embedding_function)
     handbook_collection = handbook_client.get_collection(name="handbook")
 
@@ -239,7 +241,7 @@ def retrieve_context(user_question: str, decision: RouterOutput) -> str:
             f"SOURCE: {GRADING_TERM} grading document (current term)\n\n"
             + key_dates_text + "\n\n----\n\n"
             + "\n\n----\n\n".join(grading_results["documents"][0])
-            + "\n\n========\n\nSOURCE: Student handbook (general program rules, may be from an older term)\n\n"
+            + "\n\n========\n\nSOURCE: Student handbook (updated July 2026; program rules, fees, levels and policies)\n\n"
             + "\n\n----\n\n".join(handbook_results["documents"][0])
         )
 

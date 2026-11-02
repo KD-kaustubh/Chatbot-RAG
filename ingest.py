@@ -41,7 +41,7 @@ def load_embedding_function() -> DefaultEmbeddingFunction:
 def ingest_handbook(handbook_path: str, client, embedding_function, collection_name: str = "handbook"):
     """
     Loads, chunks, embed and stores the handbook in a chromadb vector store.
-    Also called by chatbot.py on first start when the database doesn't exist yet.
+    Also called by chatbot.py on first start, and whenever the handbook file has changed.
     """
     
     #Load document
@@ -62,13 +62,18 @@ def ingest_handbook(handbook_path: str, client, embedding_function, collection_n
     chunks = text_splitter.split_text(handbook_text)
     print(f"Split Handbook into {len(chunks)} chunks.")
 
-    #Embed the chunks and store them in Chromadb
-    collection = client.get_or_create_collection(name=collection_name)
+    #Embed the chunks and store them in Chromadb.
+    # The collection is rebuilt from scratch so chunks from an older handbook never linger,
+    # and it stores the file's hash so chatbot.py can tell when the handbook was replaced.
+    try:
+        client.delete_collection(collection_name)
+    except (NotFoundError, ValueError):
+        pass
+    collection = client.create_collection(name=collection_name, metadata={"source_hash": file_hash(handbook_path)})
     ids = [f"handbook_{i}" for i in range(len(chunks))]
     embedded_chunks = embedding_function(chunks)
 
-    # upsert so running ingestion again replaces chunks instead of duplicating them
-    collection.upsert(
+    collection.add(
         embeddings=embedded_chunks,
         documents=chunks,
         ids=ids
