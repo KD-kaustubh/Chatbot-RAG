@@ -6,6 +6,10 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/)
 
+![Demo of the IITM BS Degree Assistant](assets/demo.gif)
+
+*Demo on the live app: a course question, a follow-up that uses the chat history, and an out-of-scope question being refused (waiting time sped up).*
+
 ## How it works
 
 1. **Routing** – An LLM reads the question and decides whether it is about a specific subject (e.g. "What will I learn in Computational Thinking?") or a general handbook question (e.g. "What are the rules for the end term exam?").
