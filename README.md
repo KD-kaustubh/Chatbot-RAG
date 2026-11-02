@@ -1,6 +1,6 @@
 # RAG Chatbot for the IITM BS in Data Science Program
 
-A retrieval-augmented generation (RAG) chatbot that answers student questions about the IIT Madras BS in Data Science program — course content, degree structure, exam rules and policies — using the official course documents and student handbook as its only source of truth.
+A retrieval-augmented generation (RAG) chatbot that answers student questions about the IIT Madras BS in Data Science program — course content, this term's exam dates and grading formulas, degree structure, fees and policies — using the Sep 2026 grading document, the July 2026 student handbook and the course documents as its only source of truth.
 
 **Live demo:** [https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/](https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.app/)
 
@@ -8,7 +8,7 @@ A retrieval-augmented generation (RAG) chatbot that answers student questions ab
 
 ![Demo of the IITM BS Degree Assistant](assets/demo.gif)
 
-*Demo on the live app: a course question, a follow-up that uses the chat history, and an out-of-scope question being refused (waiting time sped up).*
+*Demo on the live app: the Sep 2026 grading of Maths 1 (from the grading document) and how NPTEL courses are credited (from the student handbook). Waiting time sped up.*
 
 ## How it works
 
@@ -158,7 +158,7 @@ The live version runs at https://chatbot-rag-a2fhptorpybnshppovni3r.streamlit.ap
    ```
 4. Click **Deploy**. The first start takes a few minutes: it installs the packages, downloads the embedding model and builds `handbook_db/`.
 
-Every push to `main` redeploys the app automatically. Keys can be changed later from the app's **Settings → Secrets**.
+Every push to `main` redeploys the app automatically. The app notices when code, prompts or data files changed and rebuilds the chatbot on the next visit, so no manual reboot is needed. Keys can be changed later from the app's **Settings → Secrets**.
 
 Notes:
 - Anyone with the link uses your API keys. The AI Pipe budget is small, so once it runs out answers come from Gemini and Groq.
@@ -167,8 +167,11 @@ Notes:
 ## Example questions
 
 - What will I learn in the Computational Thinking course?
-- Tell me about the foundational level subjects.
-- What are the eligibility rules to write the end term exam?
+- How is Maths 1 graded this term?
+- When is quiz 1 this term? When is the end term exam?
+- What is the grading formula for MLOps?
+- How do NPTEL courses count as credits and what is the transfer fee?
+- What is the qualifier exam fee?
 - What is the difference between Machine Learning Foundations and Machine Learning Techniques?
 
 Out-of-scope questions ("What is the capital of France?") and prompt-injection attempts get a polite refusal:
